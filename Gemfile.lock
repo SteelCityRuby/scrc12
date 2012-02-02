@@ -10,6 +10,7 @@ GEM
     launchy (2.0.5)
       addressable (~> 2.2.6)
     mime-types (1.17.2)
+    rack (1.4.1)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     rubyzip (0.9.5)
@@ -20,3 +21,4 @@ PLATFORMS
 
 DEPENDENCIES
   heroku
+  rack
