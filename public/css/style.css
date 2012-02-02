@@ -63,7 +63,7 @@ td { vertical-align: top; }
 
 
 /* ==|== primary styles =====================================================
-   Author: 
+   Author:
    ========================================================================== */
 #main {
   padding-top: 25px;
@@ -108,16 +108,14 @@ td { vertical-align: top; }
 
 }
 
-
-
 /* ==|== print styles ======================================================= */
- 
+
 @media print {
-  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } 
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; }
   a, a:visited { text-decoration: underline; }
   a[href]:after { content: " (" attr(href) ")"; }
   abbr[title]:after { content: " (" attr(title) ")"; }
-  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; } 
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }
   pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
   thead { display: table-header-group; }
   tr, img { page-break-inside: avoid; }
@@ -125,4 +123,61 @@ td { vertical-align: top; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
+}
+
+/* =home
+------------------------------------------------------------------ */
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #000;
+  margin: 0;
+}
+#container {
+  background: #ccc;
+  border-top: 1px solid #ccc;
+}
+h1 {
+  margin: 30px 0;
+  background: url(../img/scrc-logo.png) no-repeat 50% 0;
+  height: 129px;
+  text-indent: -99999px;
+}
+#main {
+  width: 960px;
+  margin: auto;
+}
+#photo {
+  float: left;
+  width: 500px;
+}
+#photo img {
+  border: 1px solid #888;
+}
+#summary {
+  float: left;
+  width: 460px;
+}
+#summary p#when,
+#summary p#where {
+  font-size: 250%;
+  color: #fff;
+  text-shadow: #888 1px 1px 4px;
+  margin: 0;
+  line-height: 1.2;
+}
+#summary p {
+  font-size: 140%;
+  line-height: 1.4;
+}
+footer {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  background: #000;
+}
+footer a:link,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: #fff;
 }
