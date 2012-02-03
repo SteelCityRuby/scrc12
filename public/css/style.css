@@ -128,12 +128,13 @@ td { vertical-align: top; }
 /* =home
 ------------------------------------------------------------------ */
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #000;
   margin: 0;
+  background: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
 }
 #container {
-  background: #ccc url(../img/grunge_wall.png);
+  background: #ccc url(../img/metal-bg.jpg);
   border-top: 1px solid #ccc;
 }
 h1 {
@@ -170,7 +171,7 @@ h1 {
   line-height: 1.2;
 }
 #summary p {
-  font-size: 140%;
+  font-size: 160%;
   line-height: 1.4;
 }
 footer {
