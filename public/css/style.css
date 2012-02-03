@@ -149,7 +149,7 @@ h1 {
 }
 #photo {
   float: left;
-  width: 500px;
+  width: 480px;
 }
 #photo img {
   border: 1px solid #aaa;
@@ -159,7 +159,7 @@ h1 {
 }
 #summary {
   float: left;
-  width: 460px;
+  width: 480px;
 }
 #summary p#when,
 #summary p#where {
@@ -173,6 +173,10 @@ h1 {
 #summary p {
   font-size: 160%;
   line-height: 1.4;
+}
+#coming-soon {
+  color: #444;
+  font-style: italic;
 }
 footer {
   clear: both;
