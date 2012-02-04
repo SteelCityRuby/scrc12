@@ -190,3 +190,22 @@ footer a:hover,
 footer a:active {
   color: #fff;
 }
+
+/* =signup
+------------------------------------------------------------------ */
+#mc_embed_signup form {
+  padding: 0;
+}
+#signup-text {
+  font-style: italic;
+}
+#mc_embed_signup input.email {
+  font-size: 120%;
+}
+#mc_embed_signup .button {
+  background-color: #333;
+}
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:focus {
+  background-color: #555;
+}
