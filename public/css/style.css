@@ -97,6 +97,7 @@ td { vertical-align: top; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h1 { display: none; }
   h2, h3 { page-break-after: avoid; }
+  .print-break { page-break-before: always; }
   header {
     padding-top: 25px;
   }
@@ -109,9 +110,7 @@ td { vertical-align: top; }
     box-shadow: 0 0 0 !important;
     margin-bottom: 0 !important;
   }
-  .print-break {
-    page-break-before: always;
-  }
+  #sponsor-levels { color: #333 !important; }
 }
 
 /* =home
