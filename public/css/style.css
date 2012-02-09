@@ -253,3 +253,12 @@ body#sponsors #main p {
 #sponsor-levels a:active {
   color: #c00;
 }
+#contact-details {
+  list-style-type: none;
+  margin-left: 30px;
+  padding-left: 0;
+}
+#contact-details li {
+  font-size: 200%;
+  margin: 0.25em 0;
+}
