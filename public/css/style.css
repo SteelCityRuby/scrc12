@@ -158,7 +158,7 @@ header a:link,
 header a:visited,
 header a:hover,
 header a:active,
-header span {
+header div {
   display: block;
   height: 77px;
   line-height: 77px;
@@ -169,13 +169,20 @@ header span {
   text-decoration: none;
   background: url(../img/header-link-pipe.png) no-repeat 100% 0;
 }
-header li.active span,
+header li.active div,
 header li.active a:link,
 header li.active a:hover,
 header li.active a:visited,
 header li.active a:active,
-header li   a:hover {
+header li a:hover {
   background: url(../img/header-active-bg.png) repeat-x 0 0;
+}
+header li.active div {
+}
+header li.active div span,
+header li a:hover span {
+  background: url(../img/active-ruby.png) no-repeat 0 50%;
+  padding-left: 26px;
 }
 header li.logo a:link,
 header li.logo a:visited,
