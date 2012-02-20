@@ -82,6 +82,7 @@ td { vertical-align: top; }
 
 /* ==|== print styles ======================================================= */
 
+.print-only { display: none; }
 @media print {
 /*  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } */
   footer { display: none }
@@ -111,9 +112,11 @@ td { vertical-align: top; }
     margin-bottom: 0 !important;
   }
   #sponsor-levels { color: #333 !important; }
+  .print-only { display: block }
+  img.print-only { display: inline }
 }
 
-/* =home
+/* =theme
 ------------------------------------------------------------------ */
 body {
   margin: 0;
@@ -125,14 +128,74 @@ body {
   background: #ccc url(../img/metal-bg.jpg);
   padding-top: 1px;
 }
+h2 {
+  font-family: Futura, sans-serif;
+  font-size: 260%;
+  font-weight: normal;
+}
+
+/* =header
+------------------------------------------------------------------ */
+header {
+  background: url(../img/header-bg.png) repeat-x 0 0;
+  height: 85px;
+}
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+header ul {
+  width: 940px;
+  margin: auto;
+}
+header li {
+  float: left;
+  white-space: nowrap;
+  width: 25%;
+}
+header a:link,
+header a:visited,
+header a:hover,
+header a:active,
+header span {
+  display: block;
+  height: 77px;
+  line-height: 77px;
+  text-align: center;
+  color: #fff;
+  font-size: 120%;
+  font-family: Futura, Arial, sans-serif;
+  text-decoration: none;
+  background: url(../img/header-link-pipe.png) no-repeat 100% 0;
+}
+header li.active span,
+header li.active a:link,
+header li.active a:hover,
+header li.active a:visited,
+header li.active a:active,
+header li   a:hover {
+  background: url(../img/header-active-bg.png) repeat-x 0 0;
+}
+header li.logo a:link,
+header li.logo a:visited,
+header li.logo a:hover,
+header li.logo a:active {
+  text-indent: -9999px;
+  background: url(../img/header-logo.png) no-repeat 0 50%;
+}
+header li.logo {
+  background: url(../img/header-link-pipe.png) no-repeat 100% 0;
+}
+
+/* =home
+------------------------------------------------------------------ */
 h1 {
-  margin: 50px 0 30px;
+  margin: 40px 0;
   background: url(../img/scrc-logo.png) no-repeat 50% 0;
   height: 129px;
   text-indent: -99999px;
 }
-header { text-align: center }
-header img { display: none; }
 #main {
   width: 960px;
   margin: auto;
@@ -205,10 +268,14 @@ footer a:active {
 ------------------------------------------------------------------ */
 body#sponsors #main {
   width: 960px;
+}
+body#sponsors #main .content {
+
+}
+body#sponsors #sponsor-letter {
+  padding: 0 20px 10px;
   margin-bottom: 250px;
   padding-bottom: 0;
-  background: #000;
-  color: #ccc;
   background: #fff;
   color: #333;
   border: 1px solid #555;
@@ -216,10 +283,7 @@ body#sponsors #main {
   -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
   box-shadow: 3px 3px 8px #555; /* CSS3 */
 }
-body#sponsors #main .content {
-  padding: 0 20px 10px;
-}
-body#sponsors h2 {
+body#sponsors h3 {
   font-family: Futura, sans-serif;
   font-size: 220%;
   font-weight: normal;
