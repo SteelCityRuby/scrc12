@@ -271,15 +271,15 @@ footer a:active {
   background-color: #555;
 }
 
-/* =sponsors
+/* =andrewcox theme for pages with paragraphs of text content
 ------------------------------------------------------------------ */
-body#sponsors #main {
+body.andrewcox #main {
   width: 960px;
 }
-body#sponsors #main .content {
+body.andrewcox #main .content {
 
 }
-body#sponsors #sponsor-letter {
+body.andrewcox #letter {
   padding: 0 20px 10px;
   margin-bottom: 250px;
   padding-bottom: 0;
@@ -290,16 +290,18 @@ body#sponsors #sponsor-letter {
   -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
   box-shadow: 3px 3px 8px #555; /* CSS3 */
 }
-body#sponsors h3 {
+body.andrewcox h3 {
   font-family: Futura, sans-serif;
   font-size: 220%;
   font-weight: normal;
 }
-body#sponsors #main p {
+body.andrewcox #main p {
   font-family: Verdana, sans-serif;
   font-size: 120%;
   line-height: 1.5;
 }
+/* =sponsors
+------------------------------------------------------------------ */
 #sponsor-levels {
   width: 100%;
   background: #000;
@@ -332,4 +334,9 @@ body#sponsors #main p {
 #contact-details li {
   font-size: 200%;
   margin: 0.25em 0;
+}
+/* =city
+------------------------------------------------------------------ */
+#direct-flights {
+  display: none;
 }
