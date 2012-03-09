@@ -335,3 +335,8 @@ body.andrewcox #main p {
   font-size: 200%;
   margin: 0.25em 0;
 }
+/* =city
+------------------------------------------------------------------ */
+#direct-flights {
+  display: none;
+}
