@@ -334,6 +334,7 @@ body#sponsors #main p {
   font-size: 200%;
   margin: 0.25em 0;
 }
+
 /* =policies
 ------------------------------------------------------------------ */
 dt, dd {
@@ -343,4 +344,7 @@ dt, dd {
 }
 dt {
   font-weight: bold;
+}
+#harassment-notice {
+  margin-top: 1em;
 }
