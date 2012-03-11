@@ -364,6 +364,10 @@ dt {
   border: 1px solid #888;
   margin-bottom: 20px;
 }
+.photo-left {
+  float: left;
+  margin-right: 25px;
+}
 .photo-right {
   float: right;
   margin-left: 10px;
