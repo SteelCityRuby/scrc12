@@ -10,5 +10,4 @@ Start the simple rack server:
 
 And you should be able to access the site at:
 
-http://localhost:9292/
-
+[http://localhost:9292/](http://localhost:9292/)
