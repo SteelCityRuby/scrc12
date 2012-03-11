@@ -33,9 +33,10 @@ Create a topic branch.
 
     $ git checkout -b my_update
 
-Make changes, commit them:
+Make changes, commit, and push them:
 
     $ git commit -am "Updating such and such for great victory"
+    $ git push origin my_update
 
 Submit a pull request:
 
