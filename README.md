@@ -8,7 +8,7 @@ Start the simple rack server:
 
     $ rackup -p 9292 config.ru
 
-And you should be able to access the site:
+And you should be able to access the site at:
 
-    http://localhost:9292/
+http://localhost:9292/
 
