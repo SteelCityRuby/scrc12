@@ -379,6 +379,20 @@ dt {
   clear: both;
   margin-bottom: 50px;
 }
+.speaker-card {
+  float: left;
+}
+ul.speaker-links {
+  clear: left;
+  list-style-type: none;
+  padding-top: 5px;
+  margin-left: 10px;
+  padding-left: 0;
+  font-weight: bold;
+}
+ul.speaker-links li {
+  margin: 0.25em 0;
+}
 .speaker-photo {
   float: left;
   padding: 5px;
