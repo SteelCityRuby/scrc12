@@ -120,9 +120,9 @@ td { vertical-align: top; }
 ------------------------------------------------------------------ */
 body {
   margin: 0;
-  background: #000;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #fff;
   color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #container {
   background: #ccc url(../img/metal-bg.jpg);
@@ -258,7 +258,7 @@ h1 {
 }
 footer {
   clear: both;
-  padding: 20px;
+  padding: 20px 20px 100px;
   text-align: center;
   background: #000;
   color: #fff;
@@ -422,4 +422,56 @@ ul.speaker-trivia li {
 ------------------------------------------------------------------ */
 .left-col, .right-col {
   float: left;
+}
+
+/* =city
+------------------------------------------------------------------ */
+.sponsor-group h3 {
+  margin-bottom: 0.25em;
+}
+.sponsor {
+  background: #373737 url(/img/sponsor-bg.png) repeat-y 0 0;
+  color: #fff;
+  margin-bottom: 2em;
+}
+.sponsor-card {
+  background: #fff;
+  width: 300px;
+  float: left;
+}
+.sponsor-blurb {
+  margin-left: 300px;
+  padding: 15px 20px;
+  line-height: 1.6;
+  font-size: 110%;
+}
+.sponsor-card .inside {
+  padding: 15px 20px;
+}
+.sponsor-card img {
+  margin-bottom: 15px;
+}
+.sponsor-card a:link,
+.sponsor-card a:visited,
+.sponsor-card a:hover,
+.sponsor-card a:active {
+  font-weight: bold;
+  background: transparent;
+  text-decoration: none;
+}
+.sponsor-card .web a,
+.sponsor-card .twitter a {
+  padding-left: 20px;
+  line-height: 20px;
+  background: url(/img/icon-globe.png) no-repeat 0 50%;
+}
+.sponsor-card .twitter a {
+  background-image: url(/img/icon-twitter.png);
+}
+.sponsor-card a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.sponsor-rogers {
+  margin-bottom: 50px;
 }
