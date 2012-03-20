@@ -120,6 +120,7 @@ td { vertical-align: top; }
 ------------------------------------------------------------------ */
 body {
   margin: 0;
+  min-width: 960px;
   background: #000;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
