@@ -274,6 +274,30 @@ footer a:hover,
 footer a:active {
   color: #fff;
 }
+#mini-speaker-photos dd {
+  display: none;
+}
+#mini-speaker-photos dt {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  float:left;
+}
+#mini-speaker-photos {
+  padding-top:0px;
+  margin-top:0px;
+  float: left;
+  width: 68%;
+}
+#mini-bio {
+  display: block;
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  height: 240px;
+}
+#speakers-summary {
+}
 
 /* =signup
 ------------------------------------------------------------------ */
@@ -302,6 +326,11 @@ footer a:active {
 #main h3 {
   font-family: Futura, sans-serif;
   font-size: 220%;
+  font-weight: normal;
+}
+#main h4 {
+  font-family: Futura, sans-serif;
+  font-size: 120%;
   font-weight: normal;
 }
 #main p {
