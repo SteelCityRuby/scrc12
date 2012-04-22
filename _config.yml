@@ -2,10 +2,10 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://yoursite.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://scrc-octopress.heroku.com
+title: Steel City Ruby Conf
+subtitle: Pittsburgh's First Ruby Conference
+author: Andrew Cox
 simple_search: http://google.com/search
 description:
 
