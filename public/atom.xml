@@ -4,7 +4,7 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://scrc-octopress.heroku.com/atom.xml" rel="self"/>
   <link href="http://scrc-octopress.heroku.com/"/>
-  <updated>2012-04-22T17:01:09-04:00</updated>
+  <updated>2012-04-22T17:24:41-04:00</updated>
   <id>http://scrc-octopress.heroku.com/</id>
   <author>
     <name><![CDATA[Steel City Ruby Conf]]></name>
@@ -12,5 +12,14 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://scrc-octopress.heroku.com/blog/2012/04/22/hello-world/"/>
+    <updated>2012-04-22T17:11:00-04:00</updated>
+    <id>http://scrc-octopress.heroku.com/blog/2012/04/22/hello-world</id>
+    <content type="html"><![CDATA[<p>Welcome to the first annual Steel City Ruby Conf!</p>
+]]></content>
+  </entry>
   
 </feed>
