@@ -31,9 +31,10 @@ x * Header link font
 x * Header link active
 x * Logo in place of "Home" link
 x * Page titles
+x * Footer content
 
-* Footer content
 * The City page content
 * Home page content
 * The Blog content
 * Responsive layout
+* Anti-harassment page

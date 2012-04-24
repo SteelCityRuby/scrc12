@@ -15,7 +15,7 @@ body {
 #main {
   width: 960px;
   margin: -10px auto 0;
-  padding: 10px 0 20px;
+  padding: 10px 0 0;
   background: url(/images/scrc/main-bg.png);
   border: 1px solid #898989;
   border-width: 0 1px;
@@ -132,6 +132,7 @@ body > footer {
   border: 0;
   text-shadow: none;
   border-radius: 0;
+  text-align: center;
 }
 body > footer p {
   text-align: center;
