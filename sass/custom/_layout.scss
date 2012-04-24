@@ -19,3 +19,14 @@
 //$sidebar-pad-medium: 15px;
 //$sidebar-pad-wide: 20px;
 //$sidebar-width-wide: 300px;
+
+$max-width: 960px;
+
+$sidebar-width-medium: 0;
+$sidebar-pad-medium: 0;
+$sidebar-pad-wide: 0;
+$sidebar-width-wide: 0;
+
+header, aside, span.toggle-sidebar {
+  display: none;
+}

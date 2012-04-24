@@ -1,2 +1,138 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+/* =theme
+------------------------------------------------------------------ */
+html {
+  background: #000;
+}
+body {
+  max-width: none;
+  background: #000 url(/images/scrc/metal-bg.jpg);
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#main {
+  width: 960px;
+  margin: -10px auto 0;
+  padding: 10px 0 20px;
+  background: url(/images/scrc/main-bg.png);
+  border: 1px solid #898989;
+  border-width: 0 1px;
+}
+#main > div {
+  background: transparent;
+}
+h2 {
+  font-family: Futura, sans-serif;
+  font-size: 260%;
+  font-weight: normal;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+a:hover {
+  color: #fff;
+  background: #000;
+}
+
+/* =nav
+------------------------------------------------------------------ */
+body > nav {
+  position: relative;
+  display: block !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(/images/scrc/header-bg.png) repeat-x 0 0;
+  height: 85px;
+}
+body > nav ul {
+  float: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  margin: auto;
+}
+body > nav ul li,
+body > nav ul li + li {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  width: 20%;
+}
+body > nav a:link,
+body > nav a:visited,
+body > nav a:hover,
+body > nav a:active {
+  float: none;
+  display: block;
+  padding: 0;
+  height: 77px;
+  line-height: 77px;
+  text-align: center;
+  color: #fff;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "Futura", Arial, sans-serif;
+  text-decoration: none;
+  text-shadow: none;
+  background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+  border: 0;
+}
+nav li span {
+  display: inline-block;
+  padding-left: 26px;
+  margin-left: -26px;
+  cursor: pointer;
+}
+nav li.active a:link,
+nav li.active a:hover,
+nav li.active a:visited,
+nav li.active a:active,
+nav li a:hover,
+body#index nav li#link-home a,
+body#conference nav li#link-conference a,
+body#city nav li#link-city a,
+body#sponsors nav li#link-sponsors a,
+body#blog nav li#link-blog a {
+  background: url(/images/scrc/header-active-bg.png) repeat-x 0 0;
+}
+nav li.active div span,
+nav li a:hover span,
+body#index nav li#link-home a span,
+body#conference nav li#link-conference a span,
+body#city nav li#link-city a span,
+body#sponsors nav li#link-sponsors a span,
+body#blog nav li#link-blog a span {
+  background: url(/images/scrc/active-ruby.png) no-repeat 0 50%;
+}
+nav li.logo a:link,
+nav li.logo a:visited,
+nav li.logo a:hover,
+nav li.logo a:active {
+  text-indent: -9999px;
+  background: url(/images/scrc/header-logo.png) no-repeat 10px 50%;
+}
+nav li.logo {
+  background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+}
+
+/* =footer
+------------------------------------------------------------------ */
+body > footer {
+  background: #000;
+  border: 0;
+  text-shadow: none;
+  border-radius: 0;
+}
+body > footer p {
+  text-align: center;
+}
