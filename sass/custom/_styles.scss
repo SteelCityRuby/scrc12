@@ -1,6 +1,10 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
 /* =theme
 ------------------------------------------------------------------ */
 html {
@@ -11,6 +15,16 @@ body {
   background: #000 url(/images/scrc/metal-bg.jpg);
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+a:hover {
+  color: #fff;
+  background: #000;
 }
 #main {
   width: 960px;
@@ -23,20 +37,16 @@ body {
 #main > div {
   background: transparent;
 }
-h2 {
+h2, h3, h4 {
   font-family: Futura, sans-serif;
-  font-size: 260%;
   font-weight: normal;
 }
-a:link,
-a:visited,
-a:hover,
-a:active {
-  color: #333;
+h2 {
+  font-family: Futura, sans-serif;
+  font-size: 240%;
 }
-a:hover {
-  color: #fff;
-  background: #000;
+ul, ol {
+  margin-left: 2em;
 }
 
 /* =nav
@@ -136,4 +146,19 @@ body > footer {
 }
 body > footer p {
   text-align: center;
+}
+body > footer a:link,
+body > footer a:visited,
+body > footer a:hover,
+body > footer a:active {
+  color: #fff;
+}
+
+/* =city
+------------------------------------------------------------------ */
+.left-col, .right-col {
+  float: left;
+}
+.right-col {
+  padding-left: 100px;
 }
