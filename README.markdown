@@ -32,9 +32,11 @@ x * Header link active
 x * Logo in place of "Home" link
 x * Page titles
 x * Footer content
+x * The City page content
 
-* The City page content
-* Home page content
-* The Blog content
+* Home page
+* The Blog styling
+* The Conference page
+* The Sponsors page
 * Responsive layout
 * Anti-harassment page

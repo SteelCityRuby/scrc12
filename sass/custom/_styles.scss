@@ -48,6 +48,15 @@ h2 {
 ul, ol {
   margin-left: 2em;
 }
+article img {
+  border-radius: 0;
+}
+.photo img {
+  border: 1px solid #555;
+  -moz-box-shadow: 3px 3px 8px #555; /* Firefox */
+  -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
+  box-shadow: 3px 3px 8px #555; /* CSS3 */
+}
 
 /* =nav
 ------------------------------------------------------------------ */
@@ -154,6 +163,93 @@ body > footer a:active {
   color: #fff;
 }
 
+/* =home
+------------------------------------------------------------------ */
+#index #main {
+  padding-bottom: 100px;
+}
+body#index #content > div {
+  padding: 0;
+}
+body#index #content article {
+  padding: 0 20px;
+}
+h1 {
+  margin: 40px 0;
+  background: url(/images/scrc/scrc-logo.png) no-repeat 50% 0;
+  height: 129px;
+  line-height: 1;
+  text-indent: -99999px;
+}
+#index .photo {
+  float: left;
+  width: 480px;
+}
+#summary {
+  float: left;
+  width: 430px;
+  margin-top: -8px;
+}
+#summary p#where,
+#summary p#when {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 200%;
+  color: #fff;
+  text-shadow: #333 1px 1px 4px;
+  margin: 0;
+  line-height: 1.2;
+}
+#summary p#when {
+  margin-bottom: 12px;
+}
+#summary p {
+  font-size: 100%;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+#coming-soon {
+  color: #444;
+  font-style: italic;
+}
+#speakers-summary {
+  clear: both;
+  padding-top: 20px;
+}
+#speakers-summary h2 {
+  margin-bottom: 30px;
+}
+#mini-speaker-photos dd {
+  display: none;
+}
+#mini-speaker-photos dt {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  float:left;
+}
+#mini-speaker-photos {
+  padding-top:0px;
+  margin-top:0px;
+  float: left;
+  width: 660px;
+}
+#mini-speaker-photos img {
+  border: 1px solid #fff;
+  margin: 0 3px;
+  box-shadow: none;
+}
+#mini-bio {
+  display: block;
+  float: left;
+  width: 240px;
+  height: 240px;
+  font-size: 80%;
+  line-height: 1.4;
+}
+#mini-bio h4 {
+  font-size: 120%;
+}
+
 /* =city
 ------------------------------------------------------------------ */
 .left-col, .right-col {
@@ -161,4 +257,27 @@ body > footer a:active {
 }
 .right-col {
   padding-left: 100px;
+}
+
+/* =signup
+------------------------------------------------------------------ */
+#mc_embed_signup form {
+  padding: 0;
+}
+#signup-text {
+  font-style: italic;
+  font-size: 90%;
+
+}
+#mc_embed_signup input.email {
+  font-size: 90%;
+  min-width: 300px;
+  padding: 4px 1px;
+}
+#mc_embed_signup .button {
+  background-color: #333;
+}
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:focus {
+  background-color: #555;
 }
