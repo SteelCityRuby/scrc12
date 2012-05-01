@@ -297,7 +297,8 @@ body#index h1 {
 header {
   display: none;
 }
-#blog .blog-index header {
+#blog .blog-index header,
+#post article header {
   display: block;
 }
 #post h2, #post h3, #post h4,
