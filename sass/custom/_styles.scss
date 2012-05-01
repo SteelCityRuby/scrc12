@@ -56,6 +56,10 @@ h2 {
 ul, ol {
   margin-left: 2em;
 }
+p {
+  margin-bottom: 1em;
+  font-size: 100%;
+}
 article img {
   border-radius: 0;
 }
@@ -64,6 +68,9 @@ article img {
   -moz-box-shadow: 3px 3px 8px #555; /* Firefox */
   -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
   box-shadow: 3px 3px 8px #555; /* CSS3 */
+}
+article h2 {
+  background: transparent;
 }
 
 /* =nav
@@ -324,4 +331,75 @@ article footer time {
 }
 #blog #content .blog-index article {
   padding-top: 0;
+}
+
+/* =conference
+------------------------------------------------------------------ */
+body#conference #content article {
+  padding: 0 20px;
+}
+.map-frame {
+  float: left;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #888;
+  margin-bottom: 20px;
+}
+.photo-left {
+  float: left;
+  margin-right: 25px;
+}
+.photo-right {
+  float: right;
+  margin-left: 10px;
+}
+.clear {
+  clear: both;
+}
+.speaker {
+  clear: both;
+  margin-bottom: 50px;
+}
+.speaker-card {
+  float: left;
+}
+ul.speaker-links {
+  clear: left;
+  list-style-type: none;
+  padding-top: 5px;
+  margin-left: 10px;
+  padding-left: 0;
+  font-weight: bold;
+}
+ul.speaker-links li {
+  margin: 0.25em 0;
+}
+.speaker-photo {
+  float: left;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #888;
+  height: 120px;
+}
+.speaker-photo img {
+  border: 0;
+  box-shadow: none;
+}
+.speaker-summary {
+  margin-left: 150px;
+  font-size: 80%;
+  line-height: 1.4;
+}
+.speaker-summary .name {
+  font-weight: bold;
+  font-size: 130%;
+  margin-bottom: 0.5em;
+}
+ul.speaker-trivia {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ul.speaker-trivia li {
+  margin: 0.25em 0;
 }
