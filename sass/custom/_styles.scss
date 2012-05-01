@@ -1,9 +1,17 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
 
+/* =reset
+------------------------------------------------------------------ */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { zoom: 1; }
+
+/* =layout
+------------------------------------------------------------------ */
+body > header, aside, span.toggle-sidebar {
+  display: none;
+}
 
 /* =theme
 ------------------------------------------------------------------ */
@@ -121,7 +129,8 @@ body#index nav li#link-home a,
 body#conference nav li#link-conference a,
 body#city nav li#link-city a,
 body#sponsors nav li#link-sponsors a,
-body#blog nav li#link-blog a {
+body#blog nav li#link-blog a,
+body#post nav li#link-blog a {
   background: url(/images/scrc/header-active-bg.png) repeat-x 0 0;
 }
 nav li.active div span,
@@ -130,7 +139,8 @@ body#index nav li#link-home a span,
 body#conference nav li#link-conference a span,
 body#city nav li#link-city a span,
 body#sponsors nav li#link-sponsors a span,
-body#blog nav li#link-blog a span {
+body#blog nav li#link-blog a span,
+body#post nav li#link-blog a span {
   background: url(/images/scrc/active-ruby.png) no-repeat 0 50%;
 }
 nav li.logo a:link,
@@ -174,7 +184,7 @@ body#index #content > div {
 body#index #content article {
   padding: 0 20px;
 }
-h1 {
+body#index h1 {
   margin: 40px 0;
   background: url(/images/scrc/scrc-logo.png) no-repeat 50% 0;
   height: 129px;
@@ -280,4 +290,37 @@ h1 {
 #mc_embed_signup .button:hover,
 #mc_embed_signup .button:focus {
   background-color: #555;
+}
+
+/* =blog
+------------------------------------------------------------------ */
+header {
+  display: none;
+}
+#blog .blog-index header {
+  display: block;
+}
+#post h2, #post h3, #post h4,
+#blog h2, #blog h3, #blog h4,
+#blog article,
+#post article {
+  font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif;
+}
+#blog h2 {
+  font-size: 200%;
+}
+article header {
+  margin-bottom: 0;
+}
+#blog article h1 {
+  margin-bottom: 1em;
+}
+article > footer {
+  padding-bottom: 0;
+}
+article footer time {
+  display: none;
+}
+#blog #content .blog-index article {
+  padding-top: 0;
 }

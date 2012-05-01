@@ -4,21 +4,40 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://scrc-octopress.heroku.com/atom.xml" rel="self"/>
   <link href="http://scrc-octopress.heroku.com/"/>
-  <updated>2012-04-30T18:30:51-04:00</updated>
+  <updated>2012-05-01T18:34:22-04:00</updated>
   <id>http://scrc-octopress.heroku.com/</id>
   <author>
-    <name><![CDATA[Steel City Ruby Conf]]></name>
+    <name><![CDATA[]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
   
   <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/04/22/hello-world/"/>
-    <updated>2012-04-22T17:11:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/04/22/hello-world</id>
-    <content type="html"><![CDATA[<p>Welcome to the first annual Steel City Ruby Conf!</p>
+    <title type="html"><![CDATA[Don't code alone]]></title>
+    <link href="http://scrc-octopress.heroku.com/blog/2012/05/01/dont-code-alone/"/>
+    <updated>2012-05-01T17:58:00-04:00</updated>
+    <id>http://scrc-octopress.heroku.com/blog/2012/05/01/dont-code-alone</id>
+    <content type="html"><![CDATA[<h2>Pair programming</h2>
+
+<p>lajsdlfja slkdfj alskdjf alkdsjf laksdjf lkasjd flkasjf lkasj dflksajd flkajd fljas dlfkjas dlkfj asdlkfj aslkdjf alskdjf laksjf alksdjf lkasdj flkadjs flksdjlk fj sd</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[The Genesis of Steel City Ruby Conf]]></title>
+    <link href="http://scrc-octopress.heroku.com/blog/2012/05/01/the-genesis-of-steel-city-ruby-conf/"/>
+    <updated>2012-05-01T17:50:00-04:00</updated>
+    <id>http://scrc-octopress.heroku.com/blog/2012/05/01/the-genesis-of-steel-city-ruby-conf</id>
+    <content type="html"><![CDATA[<h2>In the beginning</h2>
+
+<p>lja fljas lfja slkdfj alksdjf lksj flksj d</p>
+
+<h3>An H3 Header</h3>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 ]]></content>
   </entry>
   

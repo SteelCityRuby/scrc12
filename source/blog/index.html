@@ -1,6 +1,6 @@
 ---
 title: "The Blog"
-layout: default
+layout: blog
 body_id: "blog"
 ---
 
@@ -12,7 +12,7 @@ body_id: "blog"
       {% include article.html %}
     </article>
   {% endfor %}
-  <div class="pagination">
+  <!-- <div class="pagination">
     {% if paginator.next_page %}
       <a class="prev" href="{{paginator.next_page}}">&larr; Older</a>
     {% endif %}
@@ -20,7 +20,7 @@ body_id: "blog"
     {% if paginator.previous_page %}
     <a class="next" href="{{paginator.previous_page}}">Newer &rarr;</a>
     {% endif %}
-  </div>
+  </div> -->
 </div>
 <aside class="sidebar">
   {% if site.blog_index_asides.size %}

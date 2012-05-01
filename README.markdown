@@ -33,10 +33,16 @@ x * Logo in place of "Home" link
 x * Page titles
 x * Footer content
 x * The City page content
+x * Home page
 
-* Home page
 * The Blog styling
+  x * Permalink
+  x * Blog archives
+  x * Tweet
+  x * Posted by
+  x * Highlight nav link on permalink page
+  x * Blog styling
 * The Conference page
 * The Sponsors page
-* Responsive layout
 * Anti-harassment page
+* Responsive layout
