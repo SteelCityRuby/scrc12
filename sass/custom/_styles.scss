@@ -1,0 +1,522 @@
+// This File is imported last, and will override other styles in the cascade
+// Add styles here to make changes without digging in too much
+
+/* =reset
+------------------------------------------------------------------ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* =layout
+------------------------------------------------------------------ */
+body > header, aside, span.toggle-sidebar {
+  display: none;
+}
+body#index #content article,
+body#conference #content article,
+body#city #content article,
+body#sponsors #content article {
+  padding: 0 20px;
+}
+
+/* =theme
+------------------------------------------------------------------ */
+html {
+  background: #000;
+}
+body {
+  max-width: none;
+  background: #000 url(/images/scrc/metal-bg.jpg);
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+a:hover {
+  color: #fff;
+  background: #000;
+}
+#main {
+  width: 960px;
+  margin: -10px auto 0;
+  padding: 10px 0 0;
+  background: url(/images/scrc/main-bg.png);
+  border: 1px solid #898989;
+  border-width: 0 1px;
+}
+#main > div {
+  background: transparent;
+}
+h2, h3, h4 {
+  font-family: Futura, sans-serif;
+  font-weight: normal;
+}
+h2 {
+  font-family: Futura, sans-serif;
+  font-size: 240%;
+}
+ul, ol {
+  margin-left: 2em;
+}
+p {
+  margin-bottom: 1em;
+  font-size: 100%;
+}
+article img {
+  border-radius: 0;
+}
+.photo img {
+  border: 1px solid #555;
+  -moz-box-shadow: 3px 3px 8px #555; /* Firefox */
+  -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
+  box-shadow: 3px 3px 8px #555; /* CSS3 */
+}
+article h2 {
+  background: transparent;
+}
+article img {
+  border: 0;
+  box-shadow: none;
+}
+
+/* =nav
+------------------------------------------------------------------ */
+body > nav {
+  position: relative;
+  display: block !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: url(/images/scrc/header-bg.png) repeat-x 0 0;
+  height: 85px;
+}
+body > nav ul {
+  float: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 960px;
+  margin: auto;
+}
+body > nav ul li,
+body > nav ul li + li {
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  width: 20%;
+}
+body > nav a:link,
+body > nav a:visited,
+body > nav a:hover,
+body > nav a:active {
+  float: none;
+  display: block;
+  padding: 0;
+  height: 77px;
+  line-height: 77px;
+  text-align: center;
+  color: #fff;
+  font-size: 100%;
+  font-weight: normal;
+  font-family: "Futura", Arial, sans-serif;
+  text-decoration: none;
+  text-shadow: none;
+  background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+  border: 0;
+}
+nav li span {
+  display: inline-block;
+  padding-left: 26px;
+  margin-left: -26px;
+  cursor: pointer;
+}
+nav li.active a:link,
+nav li.active a:hover,
+nav li.active a:visited,
+nav li.active a:active,
+nav li a:hover,
+body#index nav li#link-home a,
+body#conference nav li#link-conference a,
+body#city nav li#link-city a,
+body#sponsors nav li#link-sponsors a,
+body#blog nav li#link-blog a,
+body#post nav li#link-blog a {
+  background: url(/images/scrc/header-active-bg.png) repeat-x 0 0;
+}
+nav li.active div span,
+nav li a:hover span,
+body#index nav li#link-home a span,
+body#conference nav li#link-conference a span,
+body#city nav li#link-city a span,
+body#sponsors nav li#link-sponsors a span,
+body#blog nav li#link-blog a span,
+body#post nav li#link-blog a span {
+  background: url(/images/scrc/active-ruby.png) no-repeat 0 50%;
+}
+nav li.logo a:link,
+nav li.logo a:visited,
+nav li.logo a:hover,
+nav li.logo a:active {
+  text-indent: -9999px;
+  background: url(/images/scrc/header-logo.png) no-repeat 10px 50%;
+}
+nav li.logo {
+  background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+}
+
+/* =footer
+------------------------------------------------------------------ */
+body > footer {
+  background: #000;
+  border: 0;
+  text-shadow: none;
+  border-radius: 0;
+  text-align: center;
+}
+body > footer p {
+  text-align: center;
+}
+body > footer a:link,
+body > footer a:visited,
+body > footer a:hover,
+body > footer a:active {
+  color: #fff;
+}
+
+/* =home
+------------------------------------------------------------------ */
+#index #main {
+  padding-bottom: 100px;
+}
+body#index #content > div {
+  padding: 0;
+}
+body#index h1 {
+  margin: 40px 0;
+  background: url(/images/scrc/scrc-logo.png) no-repeat 50% 0;
+  height: 129px;
+  line-height: 1;
+  text-indent: -99999px;
+}
+#index .photo {
+  float: left;
+  width: 480px;
+}
+#summary {
+  float: left;
+  width: 430px;
+  margin-top: -8px;
+}
+#summary p#where,
+#summary p#when {
+  font-family: Futura, Arial, sans-serif;
+  font-size: 200%;
+  color: #fff;
+  text-shadow: #333 1px 1px 4px;
+  margin: 0;
+  line-height: 1.2;
+}
+#summary p#when {
+  margin-bottom: 12px;
+}
+#summary p {
+  font-size: 100%;
+  line-height: 1.4;
+  margin-bottom: 1em;
+}
+#coming-soon {
+  color: #444;
+  font-style: italic;
+}
+#speakers-summary {
+  clear: both;
+  padding-top: 20px;
+}
+#speakers-summary h2 {
+  margin-bottom: 30px;
+}
+#mini-speaker-photos dd {
+  display: none;
+}
+#mini-speaker-photos dt {
+  display: inline;
+  padding: 0px;
+  margin: 0px;
+  float:left;
+}
+#mini-speaker-photos {
+  padding-top:0px;
+  margin-top:0px;
+  float: left;
+  width: 660px;
+}
+#mini-speaker-photos img {
+  border: 1px solid #fff;
+  margin: 0 3px;
+  box-shadow: none;
+}
+#mini-bio {
+  display: block;
+  float: left;
+  width: 240px;
+  height: 240px;
+  font-size: 80%;
+  line-height: 1.4;
+}
+#mini-bio h4 {
+  font-size: 120%;
+}
+
+/* =city
+------------------------------------------------------------------ */
+.left-col, .right-col {
+  float: left;
+}
+.right-col {
+  padding-left: 100px;
+}
+
+/* =signup
+------------------------------------------------------------------ */
+#mc_embed_signup form {
+  padding: 0;
+}
+#signup-text {
+  font-style: italic;
+  font-size: 90%;
+
+}
+#mc_embed_signup input.email {
+  font-size: 90%;
+  min-width: 300px;
+  padding: 4px 1px;
+}
+#mc_embed_signup .button {
+  background-color: #333;
+}
+#mc_embed_signup .button:hover,
+#mc_embed_signup .button:focus {
+  background-color: #555;
+}
+
+/* =blog
+------------------------------------------------------------------ */
+header {
+  display: none;
+}
+#blog .blog-index header,
+#post article header {
+  display: block;
+}
+#post h2, #post h3, #post h4,
+#blog h2, #blog h3, #blog h4,
+#blog article,
+#post article {
+  font-family: "PT Serif","Georgia","Helvetica Neue",Arial,sans-serif;
+}
+#blog h2 {
+  font-size: 200%;
+}
+article header {
+  margin-bottom: 0;
+}
+#blog article h1 {
+  margin-bottom: 1em;
+}
+article > footer {
+  padding-bottom: 0;
+}
+article footer time {
+  display: none;
+}
+#blog #content .blog-index article {
+  padding-top: 0;
+}
+
+/* =conference
+------------------------------------------------------------------ */
+.map-frame {
+  float: left;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #888;
+  margin-bottom: 20px;
+}
+.photo-left {
+  float: left;
+  margin-right: 25px;
+}
+.photo-right {
+  float: right;
+  margin-left: 10px;
+}
+.clear {
+  clear: both;
+}
+.speaker {
+  clear: both;
+  margin-bottom: 50px;
+}
+.speaker-card {
+  float: left;
+}
+ul.speaker-links {
+  clear: left;
+  list-style-type: none;
+  padding-top: 5px;
+  margin-left: 10px;
+  padding-left: 0;
+  font-weight: bold;
+}
+ul.speaker-links li {
+  margin: 0.25em 0;
+}
+.speaker-photo {
+  float: left;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #888;
+  height: 120px;
+}
+.speaker-photo img {
+  border: 0;
+  box-shadow: none;
+}
+.speaker-summary {
+  margin-left: 150px;
+  font-size: 80%;
+  line-height: 1.4;
+}
+.speaker-summary .name {
+  font-weight: bold;
+  font-size: 130%;
+  margin-bottom: 0.5em;
+}
+ul.speaker-trivia {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+ul.speaker-trivia li {
+  margin: 0.25em 0;
+}
+
+/* =sponsors
+------------------------------------------------------------------ */
+.sponsor-group h3 {
+  margin-bottom: 0.25em;
+}
+.sponsor {
+  background: #373737 url(/images/scrc/sponsor-bg.png) repeat-y 0 0;
+  color: #fff;
+  margin-bottom: 2em;
+  font-size: 76%;
+}
+.sponsor-card {
+  background: #fff;
+  width: 300px;
+  float: left;
+}
+.sponsor-card .inside {
+  padding: 15px 20px;
+}
+.sponsor-card img {
+  margin-bottom: 15px;
+  border: 0;
+  box-shadow: none;
+}
+.sponsor-card a:link,
+.sponsor-card a:visited,
+.sponsor-card a:hover,
+.sponsor-card a:active,
+.sponsor-card img {
+  font-weight: bold;
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+}
+.sponsor-card .web a,
+.sponsor-card .twitter a {
+  padding-left: 20px;
+  line-height: 20px;
+  background: url(/images/scrc/icon-globe.png) no-repeat 0 50%;
+}
+.sponsor-card .twitter a {
+  background-image: url(/images/scrc/icon-twitter.png);
+}
+.sponsor-card a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.sponsor-blurb {
+  margin-left: 300px;
+  padding: 15px 20px;
+  line-height: 1.6;
+  font-size: 110%;
+}
+#sponsor-levels {
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+#sponsor-levels th,
+#sponsor-levels td {
+  padding: 12px 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+#sponsor-levels th {
+  padding: 16px 8px;
+  border-bottom: 1px solid #333;
+}
+#sponsor-levels .benefit {
+  text-align: left;
+}
+#sponsor-levels a:link,
+#sponsor-levels a:visited,
+#sponsor-levels a:hover,
+#sponsor-levels a:active {
+  color: #c00;
+}
+ol#footnotes {
+  margin-top: 0.75em;
+  font-size: 80%;
+}
+ol#footnotes li {
+
+}
+#contact-details {
+  list-style-type: none;
+  margin-left: 30px;
+  padding-left: 0;
+}
+#contact-details li {
+  font-size: 160%;
+  margin: 0.25em 0;
+}
+.sponsor-rogers {
+  margin-bottom: 50px;
+}
+
+/* =policies
+------------------------------------------------------------------ */
+dt, dd {
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+}
+dt {
+  font-weight: bold;
+}
+dd {
+  margin: 0 0 10px 40px;
+}
+#harassment-notice {
+  margin-top: 1em;
+}
