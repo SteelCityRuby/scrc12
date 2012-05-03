@@ -1,16 +1,34 @@
-## Common actions
+## Overview
 
-### Create a new blog post:
+This is the official website for [Steel City Ruby Conf](http://steelcityrubyconf.org). It's base on Octopress.
+
+## Development QuickStart
+
+### Clone and set up your environment
+
+There is an .rvmrc file within the project that sets your environment to use Ruby 1.9.2 with gemset scrc. If you are not using [rvm](https://rvm.io/) (like if you're on Windows or something), then you'll at least need to install Bundler and run `bundle install`:
+
+    $ git clone git@github.com:pghrb/scrc-website.git
+    $ cd scrc-website
+    $ bundle install
+
+### Start the server
+
+To preview the site locally:
+
+    $ rake preview
+
+When the webserver starts up, you should be able to see the site here:
+
+http://localhost:4000
+
+### Create a new blog post
+
+To create a new blog post:
 
     $ rake new_post["title"]
 
-This will create a new post in the `/source/_posts/` directory. Then just:
-
-* Add the blog post content to that file
-* Commit to Git (both `source` and the generated `public` files)
-* Push to heroku:
-
-    $ git push heroku master
+This will create a new post in the `/source/_posts/` directory. Always edit the file in the `/source` directory, not the `/public` directory. When you're done writing your post (in [Markdown](http://daringfireball.net/projects/markdown/syntax)), commit both the `/source` and `/public` files to Git and submit a pull request.
 
 ### Add a new page:
 
@@ -20,29 +38,22 @@ This will create a new post in the `/source/_posts/` directory. Then just:
 
     $ rake generate   # Generates posts and pages into the public directory
     $ rake watch      # Watches source/ and sass/ for changes and regenerates
-    $ rake preview    # Watches, and mounts a webserver at http://localhost:4000
 
-## Mini-focus
+### Contributing updates
 
-x * Body background
-x * Footer
-x * Main background
-x * Header link font
-x * Header link active
-x * Logo in place of "Home" link
-x * Page titles
-x * Footer content
-x * The City page content
-x * Home page
+[Fork the repository](http://help.github.com/fork-a-repo/).
 
-* The Blog styling
-  x * Permalink
-  x * Blog archives
-  x * Tweet
-  x * Posted by
-  x * Highlight nav link on permalink page
-  x * Blog styling
-* The Conference page
-* The Sponsors page
-* Anti-harassment page
-* Responsive layout
+Check out your fork locally:
+
+    $ git clone git@github.com:USERNAME/scrc-website.git
+
+Create a topic branch.
+
+    $ git checkout -b my_update
+
+Make changes, commit, and push them:
+
+    $ git commit -am "Updating such and such for great victory"
+    $ git push origin my_update
+
+[Submit a pull request](http://help.github.com/send-pull-requests/).
