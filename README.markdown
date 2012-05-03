@@ -14,7 +14,7 @@ This will create a new post in the `/source/_posts/` directory. Then just:
 
 ### Add a new page:
 
-    $ rake new_page[conference.html]
+    $ rake new_page[policies/index.html]
 
 ### Generate and preview:
 
