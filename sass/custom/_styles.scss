@@ -72,6 +72,10 @@ article img {
 article h2 {
   background: transparent;
 }
+article img {
+  border: 0;
+  box-shadow: none;
+}
 
 /* =nav
 ------------------------------------------------------------------ */
@@ -402,4 +406,104 @@ ul.speaker-trivia {
 }
 ul.speaker-trivia li {
   margin: 0.25em 0;
+}
+
+/* =sponsors
+------------------------------------------------------------------ */
+body#sponsors #content article {
+  padding: 0 20px;
+}
+.sponsor-group h3 {
+  margin-bottom: 0.25em;
+}
+.sponsor {
+  background: #373737 url(/images/scrc/sponsor-bg.png) repeat-y 0 0;
+  color: #fff;
+  margin-bottom: 2em;
+  font-size: 76%;
+}
+.sponsor-card {
+  background: #fff;
+  width: 300px;
+  float: left;
+}
+.sponsor-card .inside {
+  padding: 15px 20px;
+}
+.sponsor-card img {
+  margin-bottom: 15px;
+  border: 0;
+  box-shadow: none;
+}
+.sponsor-card a:link,
+.sponsor-card a:visited,
+.sponsor-card a:hover,
+.sponsor-card a:active,
+.sponsor-card img {
+  font-weight: bold;
+  background: transparent;
+  text-decoration: none;
+  border: 0;
+}
+.sponsor-card .web a,
+.sponsor-card .twitter a {
+  padding-left: 20px;
+  line-height: 20px;
+  background: url(/images/scrc/icon-globe.png) no-repeat 0 50%;
+}
+.sponsor-card .twitter a {
+  background-image: url(/images/scrc/icon-twitter.png);
+}
+.sponsor-card a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+.sponsor-blurb {
+  margin-left: 300px;
+  padding: 15px 20px;
+  line-height: 1.6;
+  font-size: 110%;
+}
+#sponsor-levels {
+  width: 100%;
+  background: #000;
+  color: #fff;
+}
+#sponsor-levels th,
+#sponsor-levels td {
+  padding: 12px 8px;
+  text-align: center;
+  white-space: nowrap;
+}
+#sponsor-levels th {
+  padding: 16px 8px;
+  border-bottom: 1px solid #333;
+}
+#sponsor-levels .benefit {
+  text-align: left;
+}
+#sponsor-levels a:link,
+#sponsor-levels a:visited,
+#sponsor-levels a:hover,
+#sponsor-levels a:active {
+  color: #c00;
+}
+ol#footnotes {
+  margin-top: 0.75em;
+  font-size: 80%;
+}
+ol#footnotes li {
+
+}
+#contact-details {
+  list-style-type: none;
+  margin-left: 30px;
+  padding-left: 0;
+}
+#contact-details li {
+  font-size: 160%;
+  margin: 0.25em 0;
+}
+.sponsor-rogers {
+  margin-bottom: 50px;
 }
