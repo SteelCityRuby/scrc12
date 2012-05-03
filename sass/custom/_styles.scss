@@ -12,6 +12,12 @@
 body > header, aside, span.toggle-sidebar {
   display: none;
 }
+body#index #content article,
+body#conference #content article,
+body#city #content article,
+body#sponsors #content article {
+  padding: 0 20px;
+}
 
 /* =theme
 ------------------------------------------------------------------ */
@@ -192,9 +198,6 @@ body > footer a:active {
 body#index #content > div {
   padding: 0;
 }
-body#index #content article {
-  padding: 0 20px;
-}
 body#index h1 {
   margin: 40px 0;
   background: url(/images/scrc/scrc-logo.png) no-repeat 50% 0;
@@ -339,9 +342,6 @@ article footer time {
 
 /* =conference
 ------------------------------------------------------------------ */
-body#conference #content article {
-  padding: 0 20px;
-}
 .map-frame {
   float: left;
   padding: 5px;
@@ -410,9 +410,6 @@ ul.speaker-trivia li {
 
 /* =sponsors
 ------------------------------------------------------------------ */
-body#sponsors #content article {
-  padding: 0 20px;
-}
 .sponsor-group h3 {
   margin-bottom: 0.25em;
 }
