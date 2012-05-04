@@ -4,7 +4,7 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://scrc-octopress.heroku.com/atom.xml" rel="self"/>
   <link href="http://scrc-octopress.heroku.com/"/>
-  <updated>2012-05-03T07:30:27-04:00</updated>
+  <updated>2012-05-03T22:25:51-04:00</updated>
   <id>http://scrc-octopress.heroku.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -14,30 +14,43 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Don't code alone]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/05/01/dont-code-alone/"/>
-    <updated>2012-05-01T17:58:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/05/01/dont-code-alone</id>
-    <content type="html"><![CDATA[<h2>Pair programming</h2>
+    <title type="html"><![CDATA[How Steel City Ruby Conf Came to Be]]></title>
+    <link href="http://scrc-octopress.heroku.com/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/"/>
+    <updated>2012-05-03T22:19:00-04:00</updated>
+    <id>http://scrc-octopress.heroku.com/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be</id>
+    <content type="html"><![CDATA[<p>Once upon a time, in an IRC room not so far away, a few people from the
+Pittsburgh Ruby Users Group were talking about the awesome time we had just had
+at Ruby Conf 2011. We were really excited and had lots of neat ideas, including
+this one:</p>
 
-<p>lajsdlfja slkdfj alskdjf alkdsjf laksdjf lkasjd flkasjf lkasj dflksajd flkajd fljas dlfkjas dlkfj asdlkfj aslkdjf alskdjf laksjf alksdjf lkasdj flkadjs flksdjlk fj sd</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[The Genesis of Steel City Ruby Conf]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/05/01/the-genesis-of-steel-city-ruby-conf/"/>
-    <updated>2012-05-01T17:50:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/05/01/the-genesis-of-steel-city-ruby-conf</id>
-    <content type="html"><![CDATA[<h2>In the beginning</h2>
+<pre> carols10cents: we should have a conference in pittsburgh! </pre>
 
-<p>lja fljas lfja slkdfj alksdjf lksj flksj d</p>
 
-<h3>An H3 Header</h3>
+<p>There was much agreement, and thus the brainstorming began! We have a google doc
+with all sorts of ideas. Some of those are being used this year, some were a bit
+too ambitious for our first year ;) We also called it &#8220;Project Octoconf&#8221; for a
+while so that we didn&#8217;t get stuck on picking a name&#8211; not because we have any
+affiliation with Github/octocat, but because we see Pittsburgh Ruby, and
+Pittsburgh in general, reaching into lots of different things and slowly taking
+over the world, quietly and for good, of course :D</p>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>Since there are so many Ruby conferences though, what would make someone want to
+come to ours? Well, what <em>about</em> all those Ruby conferences? Where do you start?
+What if you&#8217;re not sure about this whole conference scene? What all goes on
+there? Won&#8217;t it be all people who have been going to conferences forever?</p>
 
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#8217;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+<p>So we decided to try to be the best Ruby conference for someone&#8217;s first Ruby
+conference. We feel strongly that interacting with the community at conferences
+is one of the great things about programming in Ruby, and we&#8217;d like to help
+people get into that.</p>
+
+<p>To that end, we&#8217;re trying to keep costs down (and Pittsburgh helps with that as
+it&#8217;s a relatively cheap city), do outreach to people who haven&#8217;t been to
+conferences before, and plan activities with a new conference goer in mind.</p>
+
+<p>We are so grateful and excited for all the progress we&#8217;ve made and all the
+people who have helped us so far, and we hope you&#8217;ll join us for the culmination
+of these efforts in August!</p>
 ]]></content>
   </entry>
   
