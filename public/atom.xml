@@ -4,7 +4,7 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://scrc-octopress.heroku.com/atom.xml" rel="self"/>
   <link href="http://scrc-octopress.heroku.com/"/>
-  <updated>2012-05-04T08:19:25-04:00</updated>
+  <updated>2012-05-04T08:27:57-04:00</updated>
   <id>http://scrc-octopress.heroku.com/</id>
   <author>
     <name><![CDATA[]]></name>
@@ -18,15 +18,46 @@
     <link href="http://scrc-octopress.heroku.com/blog/2012/05/04/why-you-shouldnt-code-alone/"/>
     <updated>2012-05-04T08:03:00-04:00</updated>
     <id>http://scrc-octopress.heroku.com/blog/2012/05/04/why-you-shouldnt-code-alone</id>
-    <content type="html"><![CDATA[<p>I work for a decent sized manufacturing company in the Pittsburgh area. I am the only ruby developer. We have another developer on staff, but our responsibilities don&#8217;t usually overlap and he doesn&#8217;t know ruby. After joining this company, I was eventually tasked with writing web apps. Now, my background is Computer Engineering and I spent a considerable time learning lower level programming, C/C++ and even Assembly. I thought it would be fun to learn, so I got some books and got to work.</p>
+    <content type="html"><![CDATA[<p>I work for a decent sized manufacturing company in the Pittsburgh area. I am the
+only ruby developer. We have another developer on staff, but our
+responsibilities don&#8217;t usually overlap and he doesn&#8217;t know ruby. After joining
+this company, I was eventually tasked with writing web apps. Now, my background
+is Computer Engineering and I spent a considerable time learning lower level
+programming, C/C++ and even Assembly. I thought it would be fun to learn, so I
+got some books and got to work.</p>
 
-<p>Why was this bad? It really wasn&#8217;t. Learning a new language and framework was a lot of fun. BUT BUT BUT; it was painful at times. I had no resources besides books, Google, and online mailing lists to find answers. Granted they were very helpful, but I had no idea what I was missing. I would spend hours trying to figure out some obscure bug in my code, or waiting for an answer on Stack Overflow. I was getting ever more frustrated, especially with the speed that Rails was moving at the time. I felt like a huge failure. How dumb could I be? All of these cool people were making awesome stuff with Rails. What&#8217;s my problem?!!!</p>
+<p>Why was this bad? It really wasn&#8217;t. Learning a new language and framework was a
+lot of fun. BUT BUT BUT; it was painful at times. I had no resources besides
+books, Google, and online mailing lists to find answers. Granted they were very
+helpful, but I had no idea what I was missing. I would spend hours trying to
+figure out some obscure bug in my code, or waiting for an answer on Stack
+Overflow. I was getting ever more frustrated, especially with the speed that
+Rails was moving at the time. I felt like a huge failure. How dumb could I be?
+All of these cool people were making awesome stuff with Rails. What&#8217;s my
+problem?!!!</p>
 
-<p>Then I heard about these Ruby Brigades that were forming. Lo and behold, Pittsburgh was forming one. I almost didn&#8217;t go. I was afraid. I knew I would not know a single person there. I was obviously incapable of learning. For some reason, I decided to go. Guess what, I didn&#8217;t know anyone there. Slowly I started to meet people and talk about what I was doing. I&#8217;ll stress that this took time, several meetings. As I slowly got over my anxiety, I started to make friends and share my problems with Ruby. They challenged me to get better, and they helped me when I got stuck. It was awesome.</p>
+<p>Then I heard about these Ruby Brigades that were forming. Lo and behold,
+Pittsburgh was forming one. I almost didn&#8217;t go. I was afraid. I knew I would not
+know a single person there. I was obviously incapable of learning. For some
+reason, I decided to go. Guess what, I didn&#8217;t know anyone there. Slowly I
+started to meet people and talk about what I was doing. I&#8217;ll stress that this
+took time, several meetings. As I slowly got over my anxiety, I started to make
+friends and share my problems with Ruby. They challenged me to get better, and
+they helped me when I got stuck. It was awesome.</p>
 
-<p>Ever since, I have continued to have great experiences and new opportunities. After hearing two people talking about <a href="http://mendicantuniversity.org/">Mendicant University</a>, I applied. I actually wasn&#8217;t accepted the first time. This should have been devastating for me, but once again my new friends came to the rescue. Steve Klabnik messaged me and told me I had just missed the cutoff, that it came down to several of us and only a few open spots. He encouraged me to apply again. I did, and I completed the core skills course. Yay! I&#8217;ve got involved with planning this conference. I&#8217;ve even sent a few pull requests to open source projects, like <a href="http://hackety.com/">Hackety Hack</a>. It&#8217;s hard to describe how much this has changed me, submitting to open source is something I never really thought I could do. I still screw up and feel stupid, but I know that I&#8217;m not the only one.</p>
+<p>Ever since, I have continued to have great experiences and new opportunities.
+After hearing two people talking about <a href="http://mendicantuniversity.org/">Mendicant University</a>, I applied. I actually wasn&#8217;t
+accepted the first time. This should have been devastating for me, but once
+again my new friends came to the rescue. Steve Klabnik messaged me and told me I
+had just missed the cutoff, that it came down to several of us and only a few
+open spots. He encouraged me to apply again. I did, and I completed the core
+skills course. Yay! I&#8217;ve got involved with planning this conference. I&#8217;ve even
+sent a few pull requests to open source projects, like <a href="http://hackety.com/">Hackety Hack</a>. It&#8217;s hard to describe how much this has changed me,
+submitting to open source is something I never really thought I could do. I
+still screw up and feel stupid, but I know that I&#8217;m not the only one.</p>
 
-<p>Don&#8217;t code alone. Get involved. Meet new people. Just coding for a day job is fine, but there is a whole other world out there.</p>
+<p>Don&#8217;t code alone. Get involved. Meet new people. Just coding for a day job is
+fine, but there is a whole other world out there.</p>
 ]]></content>
   </entry>
   
