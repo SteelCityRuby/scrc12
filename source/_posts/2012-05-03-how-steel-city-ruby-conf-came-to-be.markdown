@@ -3,6 +3,7 @@ layout: post
 title: "How Steel City Ruby Conf Came to Be"
 date: 2012-05-03 22:19
 comments: true
+author: Carol Nichols
 categories:
 ---
 Once upon a time, in an IRC room not so far away, a few people from the
