@@ -479,6 +479,12 @@ ul.speaker-trivia li {
   line-height: 1.6;
   font-size: 110%;
 }
+.sponsor-blurb a:link,
+.sponsor-blurb a:visited,
+.sponsor-blurb a:hover,
+.sponsor-blurb a:active {
+  color: #fff;
+}
 .sponsor-card .inside {
   padding: 15px 20px;
 }
