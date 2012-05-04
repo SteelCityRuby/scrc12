@@ -298,25 +298,6 @@ footer a:active {
 }
 #speakers-summary {
 }
-/* =registration
------------------------------------------------------------------- */
-#registration {
-  background: #333;
-  padding: 20px;
-}
-#registration #opening {
-  font-family: Futura, Arial, sans-serif;
-  font-size: 131%;
-  color: #fff;
-  text-shadow: #333 1px 1px 4px;
-  margin: 0;
-  line-height: 1.2;
-}
-#registration #showclix-button {
-  width: 212px;
-  margin: 10px auto;
-}
-
 
 /* =signup
 ------------------------------------------------------------------ */
