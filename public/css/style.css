@@ -172,7 +172,7 @@ header ul {
 header li {
   float: left;
   white-space: nowrap;
-  width: 25%;
+  width: 20%;
 }
 header a:link,
 header a:visited,
