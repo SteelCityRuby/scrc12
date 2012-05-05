@@ -286,6 +286,25 @@ body#index h1 {
   padding-left: 100px;
 }
 
+/* =register
+------------------------------------------------------------------ */
+#register {
+  margin: 15px 0;
+
+  .button {
+    padding: 8px 12px;
+    @include border-radius(4px);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #930d11;
+
+    &:hover {
+      background-color: #af3538;
+    }
+  }
+}
+
 /* =signup
 ------------------------------------------------------------------ */
 #mc_embed_signup form {
