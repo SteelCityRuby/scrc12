@@ -34,6 +34,29 @@ This will create a new post in the `/source/_posts/` directory. Always edit the 
 
     $ rake new_page[policies/index.html]
 
+### Redirect from another url:
+
+Place the full path of the alias (place to redirect from) inside the
+destination post's YAML Front Matter. One or more aliases may be given.
+
+Example Post Configuration:
+
+    ---
+      layout: post
+      title: "How I Keep Limited Pressing Running"
+      alias: /post/6301645915/how-i-keep-limited-pressing-running/index.html
+    ---
+
+Example Post Configuration:
+
+    ---
+      layout: post
+      title: "How I Keep Limited Pressing Running"
+      alias: [/first-alias/index.html, /second-alias/index.html]
+    ---
+
+Aliases are handled by the [jekyll_alias_generator](https://github.com/tsmango/jekyll_alias_generator) plugin.
+
 ### Generate and preview:
 
     $ rake generate   # Generates posts and pages into the public directory
