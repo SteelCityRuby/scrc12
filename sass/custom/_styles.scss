@@ -110,6 +110,9 @@ body > nav ul li + li {
   padding: 0;
   border: 0;
   white-space: nowrap;
+  width: 16%;
+}
+#link-home {
   width: 20%;
 }
 body > nav a:link,
@@ -281,6 +284,25 @@ body#index h1 {
 }
 .right-col {
   padding-left: 100px;
+}
+
+/* =register
+------------------------------------------------------------------ */
+#register {
+  margin: 15px 0;
+
+  .button {
+    padding: 8px 12px;
+    @include border-radius(4px);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #930d11;
+
+    &:hover {
+      background-color: #af3538;
+    }
+  }
 }
 
 /* =signup
