@@ -460,6 +460,12 @@ ul.speaker-trivia li {
   padding: 15px 20px;
   line-height: 1.6;
   font-size: 110%;
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    color: #fff;
+  }
 }
 #sponsor-levels {
   width: 100%;
