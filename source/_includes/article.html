@@ -1,9 +1,17 @@
 {% unless page.no_header %}
   <header>
+    {% if post.gravatar_hash %}
+      <div class="author-gravatar">
+        <img src="http://www.gravatar.com/avatar/{{post.gravatar_hash}}" alt="{{post.author}}" />
+      </div>
+    {% endif %}
     {% if index %}
       <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
     {% else %}
       <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% endif %}
+    {% if post.author %}
+      <div class="entry-author">by {{post.author}}</div>
     {% endif %}
     {% unless page.meta == false %}
       <p class="meta">

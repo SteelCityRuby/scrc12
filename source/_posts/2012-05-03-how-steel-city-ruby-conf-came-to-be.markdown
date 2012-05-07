@@ -4,6 +4,7 @@ title: "How Steel City Ruby Conf Came to Be"
 date: 2012-05-03 22:19
 comments: true
 author: Carol Nichols
+gravatar_hash: 2ac88413948aad12e279e0d9609e7f74
 categories:
 ---
 Once upon a time, in an IRC room not so far away, a few people from the

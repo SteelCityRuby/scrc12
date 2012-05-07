@@ -4,6 +4,7 @@ title: "Why You Shouldn't Code Alone"
 date: 2012-05-04 08:03
 comments: true
 author: Corey Purcell
+gravatar_hash: 64847e261e75b839eb460127fb065f78
 ---
 
 
