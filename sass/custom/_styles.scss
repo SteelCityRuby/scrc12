@@ -303,6 +303,20 @@ body#index h1 {
   background-color: #af3538;
 }
 
+/* =register-link
+------------------------------------------------------------------ */
+#register_link {
+  display:block;
+  width:100%;
+  background:#006699;
+  color:#FFF;
+  text-decoration:none;
+  line-height:1em;
+  padding:14px 1px;
+  margin-bottom:4px;
+  text-align:center;
+}
+
 /* =signup
 ------------------------------------------------------------------ */
 #mc_embed_signup form {
