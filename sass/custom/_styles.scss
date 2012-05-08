@@ -214,6 +214,9 @@ body#index h1 {
   width: 430px;
   margin-top: -8px;
 }
+#date {
+  float:left;
+}
 #summary p#where,
 #summary p#when {
   font-family: Futura, Arial, sans-serif;
@@ -230,6 +233,7 @@ body#index h1 {
   font-size: 100%;
   line-height: 1.4;
   margin-bottom: 1em;
+  clear:both;
 }
 #coming-soon {
   color: #444;
@@ -287,6 +291,9 @@ body#index h1 {
 ------------------------------------------------------------------ */
 #register {
   margin: 15px 0;
+  float:right;
+  padding-right: 10%;
+  padding-top: 5%;
 }
 
 #register .button {
@@ -297,6 +304,7 @@ body#index h1 {
   text-decoration: none;
   font-weight: bold;
   background-color: #930d11;
+  width: 80%;
 }
 
 #register .button:hover {
@@ -305,17 +313,25 @@ body#index h1 {
 
 /* =register-link
 ------------------------------------------------------------------ */
+$registration-base : #006699;
+$registration-highlight : lighten($registration-base,20%);
+$registration-shadow : darken($registration-base,10%);
 #register_link {
   display:block;
   width:100%;
-  background:#006699;
+  background:$registration-base;
   color:#FFF;
+  text-shadow: 1px 1px 0 $registration-shadow;
   text-decoration:none;
   line-height:1em;
   padding:14px 1px;
   margin-top: 10px;
   margin-bottom:4px;
   text-align:center;
+  border: {
+    top: 1px solid $registration-highlight;
+    bottom: 1px solid $registration-highlight;
+  }
 }
 
 /* =signup
