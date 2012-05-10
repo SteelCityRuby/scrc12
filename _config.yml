@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://scrc-octopress.heroku.com
+url: http://steelcityrubyconf.org/
 title: Steel City Ruby Conf
 subtitle: Pittsburgh's First Ruby Conference
 simple_search:
@@ -15,7 +15,7 @@ description:
 date_format: "ordinal"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
-subscribe_rss:
+subscribe_rss: http://steelcityrubyconf.org/atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
 email:
