@@ -2,44 +2,44 @@
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
         <loc>
-            http://scrc-octopress.heroku.com/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/
+            http://steelcityrubyconf.org//blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/
         </loc>
-        <lastmod>2012-05-09T22:22:36-04:00</lastmod>
+        <lastmod>2012-05-09T09:50:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/blog/2012/05/04/why-you-shouldnt-code-alone/</loc>
-        <lastmod>2012-05-09T22:22:36-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone/</loc>
+        <lastmod>2012-05-09T09:50:33-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/blog/2012/05/08/why-we-care-about-inclusivity/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//blog/2012/05/08/why-we-care-about-inclusivity/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/blog/archives/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//blog/archives/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/blog/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//blog/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/city/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//city/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/conference/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//conference/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/policies/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//policies/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
     <url>
-        <loc>http://scrc-octopress.heroku.com/sponsors/</loc>
-        <lastmod>2012-05-09T22:26:43-04:00</lastmod>
+        <loc>http://steelcityrubyconf.org//sponsors/</loc>
+        <lastmod>2012-05-10T10:52:45-04:00</lastmod>
     </url>
 </urlset>

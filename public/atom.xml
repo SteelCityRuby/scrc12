@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Steel City Ruby Conf]]></title>
-  <link href="http://scrc-octopress.heroku.com/atom.xml" rel="self"/>
-  <link href="http://scrc-octopress.heroku.com/"/>
-  <updated>2012-05-09T22:29:07-04:00</updated>
-  <id>http://scrc-octopress.heroku.com/</id>
+  <link href="http://steelcityrubyconf.org//atom.xml" rel="self"/>
+  <link href="http://steelcityrubyconf.org//"/>
+  <updated>2012-05-10T10:52:57-04:00</updated>
+  <id>http://steelcityrubyconf.org//</id>
   <author>
     <name><![CDATA[]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Why We Care About Inclusivity]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/05/08/why-we-care-about-inclusivity/"/>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/08/why-we-care-about-inclusivity/"/>
     <updated>2012-05-08T20:55:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/05/08/why-we-care-about-inclusivity</id>
+    <id>http://steelcityrubyconf.org//blog/2012/05/08/why-we-care-about-inclusivity</id>
     <content type="html"><![CDATA[<p>A major goal of Steel City Ruby Conf is for it to be a great first experience
 for someone who has never been to a Ruby conference before.  In her post about
 the inception of the conference, Carol discussed some of the factors we tried to
@@ -71,9 +71,9 @@ any questions about our policies on the <a href="http://groups.google.com/group/
   
   <entry>
     <title type="html"><![CDATA[Why You Shouldn't Code Alone]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/05/04/why-you-shouldnt-code-alone/"/>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone/"/>
     <updated>2012-05-04T08:03:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/05/04/why-you-shouldnt-code-alone</id>
+    <id>http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone</id>
     <content type="html"><![CDATA[<p>I work for a decent sized manufacturing company in the Pittsburgh area. I am the
 only ruby developer. We have another developer on staff, but our
 responsibilities don&#8217;t usually overlap and he doesn&#8217;t know ruby. After joining
@@ -119,9 +119,9 @@ fine, but there is a whole other world out there.</p>
   
   <entry>
     <title type="html"><![CDATA[How Steel City Ruby Conf Came to Be]]></title>
-    <link href="http://scrc-octopress.heroku.com/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/"/>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/"/>
     <updated>2012-05-03T22:19:00-04:00</updated>
-    <id>http://scrc-octopress.heroku.com/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be</id>
+    <id>http://steelcityrubyconf.org//blog/2012/05/03/how-steel-city-ruby-conf-came-to-be</id>
     <content type="html"><![CDATA[<p>Once upon a time, in an IRC room not so far away, a few people from the
 Pittsburgh Ruby Users Group were talking about the awesome time we had just had
 at Ruby Conf 2011. We were really excited and had lots of neat ideas, including
