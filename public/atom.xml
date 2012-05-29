@@ -4,7 +4,7 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://steelcityrubyconf.org//atom.xml" rel="self"/>
   <link href="http://steelcityrubyconf.org//"/>
-  <updated>2012-05-23T19:26:28-04:00</updated>
+  <updated>2012-05-29T09:52:14-04:00</updated>
   <id>http://steelcityrubyconf.org//</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,45 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Stop the Celebrity Worship]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/29/stop-the-celebrity-worship/"/>
+    <updated>2012-05-29T09:44:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/05/29/stop-the-celebrity-worship</id>
+    <content type="html"><![CDATA[<p>Once[1] someone at a conference was attempting to convince me to attend Madison Ruby, and one of the reasons they gave
+for attending was &#8220;Steve Klabnik is speaking!!&#8221;</p>
+
+<p>Little did they know, I get to hear Steve&#8217;s opinions on everything at basically every Pittsburgh Ruby Brigade meeting
+each month. Seriously, we&#8217;ve tried to have him NOT speak and it&#8217;s impossible. (&lt;3 Steve!!!)</p>
+
+<p>It was strange to me that someone saw Steve as this Ruby community celebrity while I see him as a personal friend,
+someone I run into and talk to about normal person things. I always logically knew that celebrities are real people too,
+but it&#8217;s easy to get star-struck and forget this. Talking to Steve as a peer helped give me the confidence to
+talk to other Ruby celebrities in the same way.</p>
+
+<p>At conferences, one of the neat things is meeting in person the authors of blog posts, tutorials, books, libraries, and
+tools that you&#8217;ve used. It&#8217;s a great opportunity to let them know that you appreciate their work&#8211; they don&#8217;t hear that
+as often as they deserve to! But don&#8217;t let the conversation stop there&#8211; ask them what they think about the talks, ask
+what they&#8217;re working on now, and go from there.</p>
+
+<p>In a related vein, don&#8217;t spend all your time at a conference tracking down the celebrities. Talk to anyone around you,
+because there&#8217;s a good chance that they may be the celebrities of tomorrow.</p>
+
+<p>There are some careers, like NBA star, that people like me (at 5&#8217;4&#8221;) are never going to be able to attain. While there
+are still reasons like being in the right place at the right time that help people become well known, in the Ruby
+community it&#8217;s much more likely that if you learn, help people, and work hard that you will get to know enough people to
+be considered &#8220;well known&#8221; (if that&#8217;s what you want to do, of course). The current maintainer of bundler, Andre Arko,
+<a href="http://rubyrogues.com/045-rr-bundler-with-andre-arko/">described on Ruby Rogues</a> how he started by helping to answer
+questions, triaging tickets, offering patches, etc. Eventually he got commit access and is now one of the maintainers of
+an important Ruby tool. It could happen to you.</p>
+
+<p>So get to know those around you, help each other, learn from each other. Treat everyone with the respect you would treat
+a celebrity, but don&#8217;t get star-struck. Be the celebrities you admire.</p>
+
+<p><em>[1] This story actually happened to <a href="https://twitter.com/#!/coxandrew">Andrew Cox</a>, but we have a tradition of stealing his stories and telling them back to him.</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Why We Care About Inclusivity]]></title>
