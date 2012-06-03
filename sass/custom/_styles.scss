@@ -192,9 +192,6 @@ body > footer a:active {
 
 /* =home
 ------------------------------------------------------------------ */
-#index #main {
-  padding-bottom: 100px;
-}
 body#index #content > div {
   padding: 0;
 }
@@ -256,8 +253,8 @@ body#index h1 {
   float:left;
 }
 #mini-speaker-photos {
-  padding-top:0px;
-  margin-top:0px;
+  padding-top: 0px;
+  margin: 0 0 150px;
   float: left;
   width: 660px;
 }
@@ -270,7 +267,6 @@ body#index h1 {
   display: block;
   float: left;
   width: 240px;
-  height: 240px;
   font-size: 80%;
   line-height: 1.4;
 }
