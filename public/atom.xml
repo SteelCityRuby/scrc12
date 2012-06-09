@@ -4,7 +4,7 @@
   <title><![CDATA[Steel City Ruby Conf]]></title>
   <link href="http://steelcityrubyconf.org//atom.xml" rel="self"/>
   <link href="http://steelcityrubyconf.org//"/>
-  <updated>2012-06-05T21:37:00-04:00</updated>
+  <updated>2012-06-09T10:24:32-04:00</updated>
   <id>http://steelcityrubyconf.org//</id>
   <author>
     <name><![CDATA[]]></name>
@@ -12,6 +12,21 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Announcement: Code Retreat Aug 5]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/06/09/announcement-code-retreat-aug-5/"/>
+    <updated>2012-06-09T10:09:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/06/09/announcement-code-retreat-aug-5</id>
+    <content type="html"><![CDATA[<p>We are very excited to announce that on Sunday, Aug 5 (the day after SCRC) there will be a Code Retreat! <a href="http://coderetreat.org/events/steel-city-ruby-conf-code-retreat">More details here</a>, and you need to register <a href="http://steelcityrubyconfcoderetreat.eventbrite.com/">on eventbrite</a>. It is free but there is a $15 deposit that is refunded when you attend.</p>
+
+<p>The event is organized by Justin Pihony and Jim Hurne. It&#8217;s being hosted and sponsored by <a href="http://www.4moms.com/">4moms</a>, a local company that does Ruby and is also in the Strip District, about 12 blocks (20 min walk) from SCRC&#8217;s venue.</p>
+
+<p>Corey Haines, one of the founders of Code Retreat, will be facilitating!</p>
+
+<p>If you&#8217;ve never done a Code Retreat before, it&#8217;s a day of practicing your craft without the pressure of trying to get something finished. You will be pairing (and rotating partners) all day, and you can use any language. There&#8217;s a lot more information on <a href="http://coderetreat.org/">coderetreat.org</a>.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Stop the Celebrity Worship]]></title>
