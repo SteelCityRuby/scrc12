@@ -36,6 +36,17 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
+  
+  $('.day-selector').click(function() {
+    $('.day-selector').removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).get(0).id;
+    $('.day-schedule').hide();
+    console.log("#day-" + id.split('-')[1]);
+    $("#day-" + id.split('-')[1]).show();
+    console.log($("#day-saturday"));
+    return false;
+  });
 });
 </script>
 
@@ -104,7 +115,7 @@ jQuery(function($) {
     <img id="heinz-history-center" src="/images/scrc/heinz-history-center.jpg" alt="Heinz History Center"
      title="Heinz History Center" />
   </div>
-
+  
   <div class="map-frame">
     <iframe width="570" height="438" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=john+heinz+history+center&amp;aq=&amp;sll=40.444661,-80.001068&amp;sspn=0.023025,0.045447&amp;ie=UTF8&amp;hq=john+heinz+history+center&amp;hnear=&amp;t=m&amp;cid=5087244111269421195&amp;ll=40.482732,-79.981842&amp;spn=0.104453,0.195351&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe>
   </div>
@@ -117,268 +128,520 @@ jQuery(function($) {
   Steel City Ruby Conf is a single-track conference. That means everyone attending the conference has the same shared experience and there&#8217;s no need to worry about choosing between two awesome talks. Each talk is only 30 minutes with a 30 minute break in-between to allow for the all-important <em>Hallway Track™</em>. We believe the hallway track is just as important as the speaking track, so we devote an equal amount of time to each.
 </p>
 
-<h2 class="clear">SPEAKERS</h2>
+<h2 id="schedule" class="clear">SCHEDULE</h2>
 
-<div class="speaker">
-  <div class="speaker-card">
+<div id="schedule-days" class="clearfix">
+  <div class="day">
+    <a href="#friday" id="schedule-friday" class="day-selector active">Friday, August 3rd</a>
+  </div>
+  <div class="day">
+    <a href="#saturday" id="schedule-saturday" class="day-selector">Saturday, August 4th</a>
+  </div>
+</div>
+
+<div id="day-friday" class="day-schedule">
+  <div class="time-slot clearfix">
+    <div class="event"><span>Registration</span></div>
+    <div class="time">8:00 - 9:00</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Getting the most out of a conference</span></div>
+    <div class="time">9:00 - 9:30</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-card">
+      <div class="speaker-photo">
+        <img src="/images/scrc/speakers/corey-haines.jpg" alt="Corey Haines" title="Corey Haines"/>
+      </div>
+    </div>
+    
+    <div class="speaker-description">
+      <div class="speaker-summary">
+        <div class="name">Corey Haines</div>
+        
+        <div class="talk-summary">
+          <p>
+            Conferences can be intimidating. And, yet, it is one of the only places where almost everybody has something in common with you. This presents amazing opportunities for making new friends and having great conversations.
+          </p>
+          <p>
+            Let&#8217;s talk about some of the tricks and tips that experienced conference-goers use to get the most out of attendance.
+          </p>
+        </div>
+        
+        <p class="speaker-bio">
+          After 12 years of coding for money, Corey Haines said enough and went
+          on a year-long, journeyman pair-programming tour. Traveling the world,
+          pair-programming for room and board, he spent his time teaching,
+          learning and just living as a knowledge-cross-pollinating, little,
+          software craftsmanship bee. For the past three years, Corey has
+          focused his attention on helping developers improve their fundamental
+          software design skills through the use of focused-practice events,
+          such as coderetreat. He currently specializes in training teams on
+          fundamental development technical practices, as well as building
+          projects and products when not on the road.
+        </p>
+
+        <ul class="speaker-trivia">
+          <li>
+            <strong>Links: </strong><a href="http://coreyhaines.com">coreyhaines.com</a>
+          </li>
+          <li>
+            <strong>Twitter: </strong><a href="http://twitter.com/#!/coreyhaines">@coreyhaines</a>
+          </li>
+          <li>
+            <strong>First Conference:</strong> XP Universe Conference 2004 (Calgary)
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div> <!-- .speaker -->
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">9:30 - 10:00</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Thinking in Objects</span></div>
+    <div class="time">10:00 - 10:30</div>
+  </div>
+  
+  <div class="speaker">
     <div class="speaker-photo">
-      <img src="/images/scrc/speakers/corey-haines.jpg" alt="Corey Haines" title="Corey Haines"/>
+      <img src="/images/scrc/speakers/josh-susser.png" alt="Josh Susser" title="Josh Susser"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Josh Susser</div>
+      
+      <div class="talk-summary">
+        <p>
+          Ruby is one of the best object-oriented languages around. Ubiquitous objects, duck-typing, mixins, expressive syntax with low ceremony, powerful reflection and metaprogramming. But Ruby has a mixed heritage that incorporates functional and procedural models along with OOP. This flexibility provides many options for how to solve problems, but it can also lead even experienced developers into a confusing mix of programming styles and hard-to-understand software designs. But what can we do to keep things simple and easy to understand?
+        </p>
+          
+        <p>
+          Alan Kay is often quoted as saying “Perspective is worth 80 IQ points.” So let’s get the right perspective on Ruby and look at it from the direction of objects and OOP. This talk examines the fundamental concepts of object-orientation, and presents a simple model for how to think about objects and object-oriented programming. Why are objects so useful? What makes object-oriented programs easy to write and maintain? What are the pitfalls of not keeping to the OOP model? And how many slides can it take to explain two sentences? We’ll answer all these questions and more!
+        </p>
+      </div>
+        
+      <p class="speaker-bio">
+        Josh likes to say that Ruby is the love child of Lisp and Smalltalk, raised by Perl the eccentric nanny. He is CTO and co-founder of a startup you haven&#8217;t heard of yet (but will soon). Recently he spent several years at Pivotal Labs developing Rails web applications for clients, and is a high-ranked contributor to the Rails open source project. In past lives he&#8217;s done Smalltalk VM implementation and helped design the Java VM that runs on the SIM card in your iPhone. He is a regular panelist on the <a href="http://rubyrogues.com">Ruby Rogues podcast</a>, tweets as <a href="http://twitter.com/#!/joshsusser">@joshsusser</a>, and you can find his blog at <a href="http://blog.hasmanythrough.com">blog.hasmanythrough.com</a>. He currently lives in San Francisco, but grew up in Pittsburgh&#8217;s O&#8217;Hara Township and is a proud alumnus of the Fox Chapel Country Day School.
+      </p>
+      
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://rubyrogues.com">rubyrogues.com</a>, <a href="http://blog.hasmanythrough.com">blog.hasmanythrough.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/joshsusser">@joshsusser</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> OOPSLA 1987 (Orlando, Florida)
+        </li>
+      </ul>
     </div>
   </div>
-  <div class="speaker-summary">
-    <div class="name">COREY HAINES</div>
-    <p>
-      After 12 years of coding for money, Corey Haines said enough and went
-      on a year-long, journeyman pair-programming tour. Traveling the world,
-      pair-programming for room and board, he spent his time teaching,
-      learning and just living as a knowledge-cross-pollinating, little,
-      software craftsmanship bee. For the past three years, Corey has
-      focused his attention on helping developers improve their fundamental
-      software design skills through the use of focused-practice events,
-      such as coderetreat. He currently specializes in training teams on
-      fundamental development technical practices, as well as building
-      projects and products when not on the road.
-    </p>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">10:30 - 11:00</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Andrew Clay Shafer</span></div>
+    <div class="time">11:00 - 11:30</div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>LUNCH</span></div>
+    <div class="time">11:30 - 1:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Anti-Oppression 101</span></div>
+    <div class="time">1:30 - 2:00</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/steve-klabnik.jpg" alt="Steve Klabnik" title="Steve Klabnik"/>
+    </div>
+    
+    <div class="speaker-photo" style="clear: left; margin-top: 10px">
+      <img src="/images/scrc/speakers/lindsey-bieda.jpg" alt="Lindsey Bieda" title="Lindsey Bieda"/>
+    </div>
+    
+    <div class="speaker-summary">
+      <div class="name">Steve Klabnik &amp; Lindsey Bieda</div>
+      <div class="talk-summary">
+        <p>
+          Everyone acknowledges that the software field has an issue with gender balance, but there are many arguments about what to do about it. The social justice community uses the term ‘anti-oppression’ to describe techniques for being more inclusive to people of a wide variety of backgrounds, ethnicities, sexualities, and genders. Software developers generally lack exposure to these terms and techniques.
+        </p>
 
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links: </strong><a href="http://coreyhaines.com">coreyhaines.com</a>
-      </li>
-      <li>
-        <strong>Twitter: </strong><a href="http://twitter.com/#!/coreyhaines">@coreyhaines</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> XP Universe Conference 2004 (Calgary)
-      </li>
-    </p>
+        <p>
+          In this talk, Steve and Lindsey will introduce basic anti-oppression concepts, and provide specific examples of situations where we as software developers can use these tools to engender a more inclusive community.
+        </p>
+      </div>
+      
+      <p class="speaker-bio">
+        Steve is a Ruby Hero, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects, and maintains both Hackety Hack and Shoes. He also teaches classes with JumpstartLab. Steve is also writing a book on Hypermedia and REST called &#8220;Designing Hypermedia APIs&#8221;. Otherwise, Steve travels the globe speaking at conferences from Los Angeles to Kiev.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://blog.steveklabnik.com/">blog.steveklabnik.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/steveklabnik">@steveklabnik</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> Pittsburgh PodCamp 2010
+        </li>
+      </ul>
+      
+      <p class="speaker-bio">
+        Lindsey is a Philadelphian turned Pittsburgher, teacher, and lover of
+        learning. She laments the current state of diversity in the technology
+        community. To that end, she is involved in projects such as <a href="http://rstat.us">rstat.us</a>,
+        OSGCC, and TLI in an effort to promote open source ideals and
+        programming education to all. Lindsey promotes the discussion of
+        gender and privilege in technology through her somewhat controversial
+        blog. In her free time, she drinks copious cups of tea and cuts and
+        paints stencils on canvases and shirts.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://rarlindseysmash.com/">rarlindseysmash.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/lindseybieda">@lindseybieda</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> Steel City Ruby Conf 2012!
+        </li>
+      </ul>
+      
+    </div>
+    
+  </div> <!-- .speaker -->
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">2:00 - 2:30</div>
   </div>
-</div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Everybody Loves Redis, and So Can You</span></div>
+    <div class="time">2:30 - 3:00</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/matt-thompson.jpg" alt="Mattt Thompson" title="Mattt Thompson"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Mattt Thompson</div>
+      <div class="talk-summary">
+        <p>
+          To call it a key-value store would be an understatement. To call it a database would be an overstatement. To call it NoSQL would be cause for defenestration. Redis, quite simply, stands on its own as a remarkable way to store data structures: strings, lists, sets, sorted sets, and hashes.
+        </p>
+        <p>This talk will articulate the significance and elegance of its design and explore some conventional and rather unconventional ways that you can use Redis in your own applications. If you’re new to Redis, prepare to fall in love, and even if you’re already quite enamored, you’ll definitely enjoy the section about best practices and advanced usage.
+        </p>
+      </div>
+      
+      <p class="speaker-bio">
+        Mattt Thompson is the Mobile Lead at Heroku and a member of the CloudApp team. Steel City Ruby Conf is a return to his roots, both as a native Pittsburgher, and a long-time Rubyist.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://mattt.me">mattt.me</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/mattt">@mattt</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> Ruby Kaigi 2009 (Tokyo)
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">3:00 - 3:25</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>How to give a lightning talk</span></div>
+    <div class="time">3:25 - 3:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Birds of a Feather</span></div>
+    <div class="time">3:30 - 3:00</div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">4:00 - 4:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Something technical and awesome</span></div>
+    <div class="time">4:30 - 5:00</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/jeff-casimir.jpg" alt="Jeff Casimir" title="Jeff Casimir"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Jeff Casimir</div>
+      <p class="speaker-bio">
+        Jeff Casimir taught high school computer science before co-founding a charter middle school in DC then creating Jumpstart Lab in 2009. In 2012 he&#8217;s focused on constructing the Hungry Academy developer apprenticeship with LivingSocial and helping to grow the Ruby community.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://jumpstartlab.com">jumpstartlab.com</a>, <a href="http://hungryacademy.com">hungryacademy.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/j3">@j3</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> SXSW Interactive 2005
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>Mingle, bathroom break, etc.</span></div>
+    <div class="time">5:00 - 6:00</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>ModCloth Party!</span></div>
+    <div class="time">6:00 - ??</div>
+  </div>
+  
+</div> <!-- #day-friday -->
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/aaron-patterson.jpg" alt="Aaron Patterson" title="Aaron Patterson"/>
+<div id="day-saturday" class="day-schedule" style="display: none">
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>Sleep in!</span></div>
+    <div class="time">9:00 - 10:00</div>
   </div>
-  <div class="speaker-summary">
-    <div class="name">AARON PATTERSON</div>
-    <p>
-      Aaron Tenderlove Patterson (December 16th, 1980 – ) is an American
-      educator, software developer, and awesome guy.  Patterson is most
-      famous for Ruby and Rails core, his god-among-men beard, and creating
-      and hosting Friday Hugs, which feature his gentle, soft-spoken
-      personality and directness to his audiences.
-    </p>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Open Source: How to give back</span></div>
+    <div class="time">10:00 - 10:30</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/aaron-patterson.jpg" alt="Aaron Patterson" title="Aaron Patterson"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Aaron Patterson</div>
+      <div class="talk-summary">
+        <p>
+          Contributing to Open Source can be a fun and rewarding experience.  Whether you&#8217;ve run in to bugs that need to be fixed, or you would just like to give back to the community, this talk will be a practical guide to getting involved in the world of Open Source Software.  Topics will range from bug reporting and patch submission to team dynamics, but with an emphasis on practical aspects. Stories will be told, patches will be made, but remember: Having a luck dragon with you is the only way to go on a quest.
+        </p>
+      </div>
+      <p class="speaker-bio">
+        Aaron Tenderlove Patterson (December 16th, 1980 – ) is an American
+        educator, software developer, and awesome guy.  Patterson is most
+        famous for Ruby and Rails core, his god-among-men beard, and creating
+        and hosting Friday Hugs, which feature his gentle, soft-spoken
+        personality and directness to his audiences.
+      </p>
 
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://tenderlovemaking.com/">tenderlovemaking.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/tenderlove">@tenderlove</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> OSCON 2002
-      </li>
-    </ul>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://tenderlovemaking.com/">tenderlovemaking.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/tenderlove">@tenderlove</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> OSCON 2002
+        </li>
+      </ul>
 
+    </div>
   </div>
-</div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">10:30 - 11:00</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Lightning Talks</span></div>
+    <div class="time">11:00 - 11:30</div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>LUNCH</span></div>
+    <div class="time">11:30 - 1:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Lightning Talks</span></div>
+    <div class="time">1:30 - 2:00</div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">2:00 - 2:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Hey, give me a call!</span></div>
+    <div class="time">2:30 - 3:00</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/jennifer-payne.jpg" alt="Jennifer Payne" title="Jennifer Payne"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Jennifer Payne</div>
+      <div class="talk-summary">
+        <p>
+          It’s a well-known fact that start-ups and small business just do not have the purchasing power that the big guys have. That goes for everything from paper clips to software licenses.  In the past, the major players in the VoiceXML space required serious contract commitments and high monthly minimums to provide the ability to generate telephone communications and text messages.  Well, little guys rejoice!  Now there is Twilio, a pay-as-you-go telecom platform written for web developers by web developers that provides an affordable, not to mention easy, way to integrate phone communications into applications.
+        </p>
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/jeff-casimir.jpg" alt="Jeff Casimir" title="Jeff Casimir"/>
+        <p>
+          This talk will cover everything you need to get your application up and running with Twilio and even provide real-time examples.  For experienced rubyists and beginners alike, if you’ve ever considered or have been tasked with integrating telephone and text communications into your applications, Twilio just might be what you’re looking for.
+        </p>
+      </div>
+      
+      <p class="speaker-bio">
+        Jennifer discovered a passion for Ruby and Ruby on Rails a few years ago when her then-manager announced the enterprise JAVA project she was working on would be rewritten in Rails.  She has since lead the development of several in-house Rails applications and has contributed to projects in the community.  Jennifer is currently the Principal Lead at NewCare Solutions, a local Pittsburgh startup, and is a founding member of pghrb. When not doing techie things, Jennifer enjoys spending time with her husband, children and the alpacas on their farm, spinning yarn, knitting and canoeing.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="https://github.com/jenpayne">github.com/jenpayne</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/jendavis">@jendavis</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> eRubycon 2009 (Columbus, OH)
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="speaker-summary">
-    <div class="name">JEFF CASIMIR</div>
-    <p>
-      Jeff Casimir taught high school computer science before co-founding a charter
-      middle school in DC then creating Jumpstart Lab in 2009. In 2012 he&#8217;s
-      focused on constructing the Hungry Academy developer apprenticeship
-      with LivingSocial and helping to grow the Ruby community.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://jumpstartlab.com">jumpstartlab.com</a>, <a href="http://hungryacademy.com">hungryacademy.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/j3">@j3</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> SXSW Interactive 2005
-      </li>
-    </ul>
+  
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">3:00 - 3:30</div>
   </div>
-</div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>What Next?</span></div>
+    <div class="time">3:30 - 4:00</div>
+  </div>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">4:00 - 4:30</div>
+  </div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>Power Rake</span></div>
+    <div class="time">4:30 - 5:00</div>
+  </div>
+  
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/jim-weirich.png" alt="Jim Weirich" title="Jim Weirich"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Jim Weirich</div>
+      <div class="talk-summary">
+        <p>
+          Every Ruby developer uses the Rake program all the time, whether to run the database migrations in their Rails project or to just execute their tests.  Some might have even written their own rake tasks to help them perform some menial development task.
+        </p>
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/joe-obrien.jpg" alt="Joe O'Brien" title="Joe O'Brien"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">JOE O&#8217;BRIEN</div>
-    <p>
-      Joe is a father, business owner, speaker and developer. In 2006 he co-founded EdgeCase, a leading Ruby and Ruby on Rails training and consulting company. EdgeCase has had a tremendous amount of success helping companies as large as Ingersoll Rand, GAP and AT&amp;T Interactive as well as those startups still in the inception stage. Joe has been a trainer for well over three years on testing and development with Ruby and Ruby on Rails. He is also a speaker and have spoken at conferences ranging from RailsConf to numerous regional and international conferences and countless user groups.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://edgecase.com">edgecase.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/objo">@objo</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> RubyConf 2005 (San Diego, CA)
-      </li>
-    </ul>
-  </div>
-</div>
+        <p>
+          But Rake has capabilities far beyond just simple task automation. Rake is a fine grained, dependency driven, build tool that knows how to transform files, walk directory trees, and serve you supper. And it does it with the minimal possible effort. (I might have lied about the supper.)
+        </p>
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/steve-klabnik.jpg" alt="Steve Klabnik" title="Steve Klabnik"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">STEVE KLABNIK</div>
-    <p>
-      Steve is a Ruby Hero, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects, and maintains both Hackety Hack and Shoes. He also teaches classes with JumpstartLab. Steve is also writing a book on Hypermedia and REST called &#8220;Designing Hypermedia APIs&#8221;. Otherwise, Steve travels the globe speaking at conferences from Los Angeles to Kiev.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://blog.steveklabnik.com/">blog.steveklabnik.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/steveklabnik">@steveklabnik</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> Pittsburgh PodCamp 2010
-      </li>
-    </ul>
-  </div>
-</div>
+        <p>
+          In this talk we will cover the “hidden” features of Rake that are not typically used by the casual Rake user.  We will learn about the convenience of file lists, dynamic generation of tasks, rule based file generation and more.  Come learn about Power Rake.
+        </p>
+          
+        <p id="weirich-motivation" style="display: none">
+          MOTIVATION:
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/jennifer-payne.jpg" alt="Jennifer Payne" title="Jennifer Payne"/>
+          I’ve noticed lately that a lot of people are writing rake tasks that just barely scratch the surface of the capabilities that are embedded in rake.  They manually build lists of files rather than use FileLists.  They use clumsy regular expressions to manipulate file names rather than use the pathmap command.  And they use coarse grained dependencies to rebuild the world rather than really defining what their dependencies are. This talk is me doing my little bit to help folks use Rake more effectively.
+        </p>
+      </div>
+      
+      <p class="speaker-bio">
+        Jim Weirich first learned about computers when his college adviser suggested he take a computer science course: &#8220;It will be useful, and you might enjoy it.&#8221; With those prophetic words, Jim has been developing now for over 25 years, working with everything from crunching rocket launch data on supercomputers to wiring up servos and LEDs on micro-controllers.  Currently he loves working in Ruby and Rails as the Chief Scientist at EdgeCase, but you can also find him strumming on his ukulele as time permits.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://edgecase.com">edgecase.com</a>, <a href="http://onestepback.org">onestepback.org</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/jimweirich">@jimweirich</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> Ruby Conf 2001 (Tampa, Florida)
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="speaker-summary">
-    <div class="name">JENNIFER PAYNE</div>
-    <p>
-      Jennifer discovered a passion for Ruby and Ruby on Rails a few years ago when her then-manager announced the enterprise JAVA project she was working on would be rewritten in Rails.  She has since lead the development of several in-house Rails applications and has contributed to projects in the community.  Jennifer is currently the Principal Lead at NewCare Solutions, a local Pittsburgh startup, and is a founding member of pghrb. When not doing techie things, Jennifer enjoys spending time with her husband, children and the alpacas on their farm, spinning yarn, knitting and canoeing.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="https://github.com/jenpayne">github.com/jenpayne</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/jendavis">@jendavis</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> eRubycon 2009 (Columbus, OH)
-      </li>
-    </ul>
+  
+  <div class="time-slot clearfix">
+    <div class="event"><span>BREAK</span></div>
+    <div class="time">5:00 - 5:30</div>
   </div>
-</div>
+  
+  <div class="time-slot speaker-event clearfix">
+    <div class="event"><span>People Patterns</span></div>
+    <div class="time">5:30 - 6:00</div>
+  </div>
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/josh-susser.png" alt="Josh Susser" title="Josh Susser"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">JOSH SUSSER</div>
-    <p>
-      Josh likes to say that Ruby is the love child of Lisp and Smalltalk, raised by Perl the eccentric nanny. He is CTO and co-founder of a startup you haven&#8217;t heard of yet (but will soon). Recently he spent several years at Pivotal Labs developing Rails web applications for clients, and is a high-ranked contributor to the Rails open source project. In past lives he&#8217;s done Smalltalk VM implementation and helped design the Java VM that runs on the SIM card in your iPhone. He is a regular panelist on the <a href="http://rubyrogues.com">Ruby Rogues podcast</a>, tweets as <a href="http://twitter.com/#!/joshsusser">@joshsusser</a>, and you can find his blog at <a href="http://blog.hasmanythrough.com">blog.hasmanythrough.com</a>. He currently lives in San Francisco, but grew up in Pittsburgh&#8217;s O&#8217;Hara Township and is a proud alumnus of the Fox Chapel Country Day School.
+  <div class="speaker">
+    <div class="speaker-photo">
+      <img src="/images/scrc/speakers/joe-obrien.jpg" alt="Joe O'Brien" title="Joe O'Brien"/>
+    </div>
+    <div class="speaker-summary">
+      <div class="name">Joe O&#8217;Brien</div>
+      <div class="talk-summary">
+        <p>
+          We spend a large portion of our time thinking about code and technical project issues. What about the people side of things? The majority of project failures occur because of people, not technology. What we need are guides that help us navigate the waters between the people around us.
+        </p>
 
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://rubyrogues.com">rubyrogues.com</a>, <a href="http://blog.hasmanythrough.com">blog.hasmanythrough.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/joshsusser">@joshsusser</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> OOPSLA 1987 (Orlando, Florida)
-      </li>
-    </ul>
+        <p>
+          People Patterns introduces my latest effort to capture the subtleties and nuances of interpersonal relations. I&#8217;m distilling a lot of experience, a bit of psychology and a substantial amount of research and have come up with a series of patterns that can help everyone be more successful in teams and at work. How do you have those critical conversations? How do you get your point across when you think the other person is incompetent? Come and help me reveal these and join a lively discussion.
+        </p>
+      </div>
+      <p class="speaker-bio">
+        Joe is a father, business owner, speaker and developer. In 2006 he co-founded EdgeCase, a leading Ruby and Ruby on Rails training and consulting company. EdgeCase has had a tremendous amount of success helping companies as large as Ingersoll Rand, GAP and AT&amp;T Interactive as well as those startups still in the inception stage. Joe has been a trainer for well over three years on testing and development with Ruby and Ruby on Rails. He is also a speaker and have spoken at conferences ranging from RailsConf to numerous regional and international conferences and countless user groups.
+      </p>
+      <ul class="speaker-trivia">
+        <li>
+          <strong>Links:</strong> <a href="http://edgecase.com">edgecase.com</a>
+        </li>
+        <li>
+          <strong>Twitter:</strong> <a href="http://twitter.com/#!/objo">@objo</a>
+        </li>
+        <li>
+          <strong>First Conference:</strong> RubyConf 2005 (San Diego, CA)
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/jim-weirich.png" alt="Jim Weirich" title="Jim Weirich"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">JIM WEIRICH</div>
-    <p>
-      Jim Weirich first learned about computers when his college adviser suggested he take a computer science course: &#8220;It will be useful, and you might enjoy it.&#8221; With those prophetic words, Jim has been developing now for over 25 years, working with everything from crunching rocket launch data on supercomputers to wiring up servos and LEDs on micro-controllers.  Currently he loves working in Ruby and Rails as the Chief Scientist at EdgeCase, but you can also find him strumming on his ukulele as time permits.
-
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://edgecase.com">edgecase.com</a>, <a href="http://onestepback.org">onestepback.org</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/jimweirich">@jimweirich</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> Ruby Conf 2001 (Tampa, Florida)
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/matt-thompson.jpg" alt="Mattt Thompson" title="Mattt Thompson"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">MATTT THOMPSON</div>
-    <p>
-      Mattt Thompson is the Mobile Lead at Heroku and a member of the CloudApp team. Steel City Ruby Conf is a return to his roots, both as a native Pittsburgher, and a long-time Rubyist.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://mattt.me">mattt.me</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/mattt">@mattt</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> Ruby Kaigi 2009 (Tokyo)
-      </li>
-    </ul>
-  </div>
-</div>
-
-<div class="speaker">
-  <div class="speaker-photo">
-    <img src="/images/scrc/speakers/lindsey-bieda.jpg" alt="Lindsey Bieda" title="Lindsey Bieda"/>
-  </div>
-  <div class="speaker-summary">
-    <div class="name">LINDSEY BIEDA</div>
-    <p>
-      Lindsey is a Philadelphian turned Pittsburgher, teacher, and lover of
-      learning. She laments the current state of diversity in the technology
-      community. To that end, she is involved in projects such as <a href="http://rstat.us">rstat.us</a>,
-      OSGCC, and TLI in an effort to promote open source ideals and
-      programming education to all. Lindsey promotes the discussion of
-      gender and privilege in technology through her somewhat controversial
-      blog. In her free time, she drinks copious cups of tea and cuts and
-      paints stencils on canvases and shirts.
-    </p>
-    <ul class="speaker-trivia">
-      <li>
-        <strong>Links:</strong> <a href="http://rarlindseysmash.com/">rarlindseysmash.com</a>
-      </li>
-      <li>
-        <strong>Twitter:</strong> <a href="http://twitter.com/#!/lindseybieda">@lindseybieda</a>
-      </li>
-      <li>
-        <strong>First Conference:</strong> Steel City Ruby Conf 2012
-      </li>
-    </ul>
-  </div>
-</div>
-
+</div> <!-- #day-saturday -->
   
     <footer>
       

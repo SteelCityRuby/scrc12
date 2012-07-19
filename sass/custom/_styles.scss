@@ -419,7 +419,60 @@ img#heinz-history-center {
 }
 .speaker {
   clear: both;
-  margin-bottom: 50px;
+}
+#schedule-days,
+#day-friday,
+#day-saturday {
+  margin: 0 -20px;
+}
+#schedule-days {
+  background: #ccc url(/images/scrc/schedule-header-bg.png) repeat-x 0 0;
+}
+#schedule-days a:link,
+#schedule-days a:visited,
+#schedule-days a:hover,
+#schedule-days a:active {
+  color: #fff;
+  text-decoration: none;
+  font-size: 90%;
+  line-height: 28px;
+}
+.day {
+  float: left;
+  width: 478px;
+}
+#schedule-days .day a.active {
+  background: #000 url(/images/scrc/schedule-active-bg.png) repeat-x 0 0;
+}
+#schedule-friday,
+#schedule-saturday {
+  display: block;
+  text-align: center;
+}
+.time-slot {
+  background: #bbb;
+  border: 1px solid #aaa;
+  border-width: 1px 0;
+  margin: 10px 0;
+  font-size: 90%;
+}
+.time-slot div {
+  float: left;
+  width: 50%;
+}
+.time-slot .event {
+  text-align: right;
+  font-style: italic;
+}
+.time-slot .event span {
+  padding: 0 10px;
+}
+.speaker-event span {
+  font-style: normal;
+  font-weight: bold;
+}
+.speaker {
+  padding: 10px 20px;
 }
 .speaker-card {
   float: left;
@@ -453,8 +506,11 @@ ul.speaker-links li {
 }
 .speaker-summary .name {
   font-weight: bold;
-  font-size: 130%;
+  font-size: 120%;
   margin-bottom: 0.5em;
+}
+.speaker-bio {
+  font-style: italic;
 }
 ul.speaker-trivia {
   list-style-type: none;

@@ -2,6 +2,10 @@
 
 This is the official website for [Steel City Ruby Conf](http://steelcityrubyconf.org). It's base on Octopress.
 
+## TODO
+
+* Update contact for harassment to organizers@steelcityrubyconf.org
+
 ## Development QuickStart
 
 ### Clone and set up your environment

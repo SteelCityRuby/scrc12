@@ -37,6 +37,17 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
+  
+  $('.day-selector').click(function() {
+    $('.day-selector').removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).get(0).id;
+    $('.day-schedule').hide();
+    console.log("#day-" + id.split('-')[1]);
+    $("#day-" + id.split('-')[1]).show();
+    console.log($("#day-saturday"));
+    return false;
+  });
 });
 </script>
 
