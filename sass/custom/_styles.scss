@@ -41,7 +41,7 @@ a:hover {
   background: #000;
 }
 #main {
-  width: 960px;
+  max-width: 960px;
   margin: -10px auto 0;
   padding: 10px 0 0;
   background: url(/images/scrc/main-bg.png);
@@ -99,7 +99,7 @@ body > nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 body > nav ul li,
@@ -204,11 +204,11 @@ body#index h1 {
 }
 #index .photo {
   float: left;
-  width: 480px;
+  max-width: 480px;
 }
 #summary {
   float: left;
-  width: 430px;
+  max-width: 430px;
   margin-top: -8px;
 }
 #date {
@@ -256,7 +256,7 @@ body#index h1 {
   padding-top: 0px;
   margin: 0 0 150px;
   float: left;
-  width: 660px;
+  max-width: 660px;
 }
 #mini-speaker-photos img {
   border: 1px solid #fff;
@@ -266,7 +266,7 @@ body#index h1 {
 #mini-bio {
   display: block;
   float: left;
-  width: 240px;
+  max-width: 240px;
   font-size: 80%;
   line-height: 1.4;
 }
@@ -400,7 +400,7 @@ article footer time {
 /* =conference
 ------------------------------------------------------------------ */
 img#heinz-history-center {
-  width: 300px;
+  max-width: 300px;
 }
 .map-frame {
   float: left;
@@ -442,7 +442,7 @@ img#heinz-history-center {
 }
 .day {
   float: left;
-  width: 478px;
+  max-width: 478px;
 }
 #schedule-days .day a.active {
   background: #000 url(/images/scrc/schedule-active-bg.png) repeat-x 0 0;
@@ -537,7 +537,7 @@ ul.speaker-trivia li {
 }
 .sponsor-card {
   background: #fff;
-  width: 300px;
+  width: 30%;
   float: left;
 }
 .sponsor-card .inside {
@@ -572,10 +572,11 @@ ul.speaker-trivia li {
   text-decoration: underline;
 }
 .sponsor-blurb {
-  margin-left: 300px;
+  margin-left: 30%;
   padding: 15px 20px;
   line-height: 1.6;
   font-size: 110%;
+  background: #373737;		/* this is a hack, I don't understand... */
   a:link,
   a:visited,
   a:hover,
