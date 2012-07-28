@@ -20,7 +20,7 @@ for attending was &#8220;Steve &hellip;">
 
   
   <link rel="canonical" href="http://steelcityrubyconf.org//blog/2012/05/29/stop-the-celebrity-worship">
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
@@ -37,7 +37,7 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
-  
+
   $('.day-selector').click(function() {
     $('.day-selector').removeClass('active');
     $(this).addClass('active');
@@ -48,7 +48,26 @@ jQuery(function($) {
     console.log($("#day-saturday"));
     return false;
   });
-});
+
+  $("<select />").prependTo("#mobile-nav");
+  $("<option />", {
+    "selected": "selected",
+    "value"   : "",
+    "text"    : "Go to..."
+  }).appendTo("nav select");
+
+  $("nav a").each(function() {
+    var el = $(this);
+    $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.children("span:first-child").text()
+    }).appendTo("nav select");
+  });
+
+  $("nav select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
+ });
 </script>
 
   
@@ -87,6 +106,9 @@ jQuery(function($) {
   <li id="link-sponsors"><a href="/sponsors"><span>The Sponsors</span></a></li>
   <li id="link-blog"><a href="/blog"><span>The Blog</span></a></li>
 </ul>
+<div id="mobile-nav">
+  <img src="/images/scrc/header-logo.png" />
+</div>
 
 </nav>
   <div id="main">
