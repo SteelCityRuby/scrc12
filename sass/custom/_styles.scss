@@ -179,6 +179,10 @@ nav li.logo {
 body > nav #mobile-nav {
   display: none;
   width: 100%;
+  a {
+    background: none;
+    float: left;
+  }
   img {
     margin: 8px 8px 0;
   }
