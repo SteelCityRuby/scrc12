@@ -166,9 +166,35 @@ nav li.logo a:hover,
 nav li.logo a:active {
   text-indent: -9999px;
   background: url(/images/scrc/header-logo.png) no-repeat 10px 50%;
+  @media(max-width:860px){
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 90% auto;
+  }
 }
 nav li.logo {
   background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+}
+
+body > nav #mobile-nav {
+  display: none;
+  width: 100%;
+  img {
+    margin: 8px 8px 0;
+  }
+
+  select
+  {
+    float:right;
+    margin-top: 16px;
+    margin-right: 8px;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 768px) {
+  body > nav ul     { display: none; }
+  body > nav #mobile-nav { display: inline-block; }
 }
 
 /* =footer
@@ -201,6 +227,9 @@ body#index h1 {
   height: 129px;
   line-height: 1;
   text-indent: -99999px;
+  @media (max-width: 768px) {
+    display:none;
+  }
 }
 #index .photo {
   float: left;
