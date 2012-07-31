@@ -638,8 +638,8 @@ ul.speaker-trivia li {
   text-decoration: underline;
 }
 .sponsor-blurb {
-  margin-left: 30%;
-  padding: 15px 20px;
+  margin-left: 33%;
+  padding: 0;
   line-height: 1.6;
   font-size: 110%;
   background: #373737;		/* this is a hack, I don't understand... */
@@ -648,6 +648,14 @@ ul.speaker-trivia li {
   a:hover,
   a:active {
     color: #fff;
+  }
+  p {
+    background: #373737;		/* this is a hack, I don't understand... */
+    padding: 15px 20px;
+    margin: 0;
+  }
+  ul {
+
   }
 }
 #sponsor-levels {
