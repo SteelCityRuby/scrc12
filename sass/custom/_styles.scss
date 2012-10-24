@@ -26,7 +26,7 @@ html {
 }
 body {
   max-width: none;
-  background: #000 url(/images/scrc/metal-bg.jpg);
+  background: #000 url(/images/scrc/scrc-hugs.jpg) 0 -100px;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -41,15 +41,10 @@ a:hover {
   background: #000;
 }
 #main {
-  max-width: 960px;
-  margin: -10px auto 0;
-  padding: 10px 0 0;
-  background: url(/images/scrc/main-bg.png);
+  margin: 0 auto;
+  padding: 0;
   border: 1px solid #898989;
   border-width: 0 1px;
-}
-#main > div {
-  background: transparent;
 }
 h2, h3, h4 {
   font-family: Futura, sans-serif;
@@ -385,7 +380,6 @@ body#index #content > #banner,
 }
 #mc_embed_signup input.email {
   font-size: 90%;
-  min-width: 300px;
   padding: 4px 1px;
 }
 #mc_embed_signup .button {
@@ -720,4 +714,97 @@ dd {
 }
 #harassment-notice {
   margin-top: 1em;
+}
+
+/* =hacky archiving
+   ------------------------------------------------------------------ */
+
+.scrc-2012 {
+  display: none;
+}
+body > nav {
+  display: none !important;
+}
+
+/* =launchrock copying
+   ------------------------------------------------------------------ */
+body > div, body > div > div {
+ background: transparent;
+}
+.twitter-bootstrap-header {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+  color: #FFFFFF;
+  font-size: 12px;
+  height: 38px;
+  left: 0;
+  margin: 0 0 50px;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  p {
+    margin: 12px 0;
+  }
+}
+
+.announcement {
+  margin: 150px auto 300px;
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
+  border: 1px solid #334D54;
+  box-shadow: 1px 1px 5px rgba(255, 255, 255, 0.5) inset;
+  color: #FFFFFF;
+  border-radius: 6px 6px 6px 6px;
+  color: #FFFFFF;
+  padding: 18px 15px 30px;
+  position: relative;
+  width: 378px;
+  text-align: center;
+
+  h2 {
+    font-size: 27px;
+    padding: 0 0 15px;
+  }
+  h3 {
+    font-size: 14px;
+    padding: 0 0 7px;
+  }
+  p {
+    font-size: 13px !important;
+    line-height: 18px;
+    padding: 0 0 20px;
+  }
+  #signup-text {
+    font-size: 13px;
+    font-style: normal;
+  }
+  #mc_embed_signup input.email {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    color: #999999;
+    display: inline;
+    float: left;
+    font-size: 14px;
+    margin: 0 4px 0 35px;
+    padding: 9px 11px;
+    width: 230px;
+
+  }
+  #mc_embed_signup input.button {
+    background: -moz-linear-gradient(center top , #D5ECBE 0%, #96D05C 3%, #84C841 49%, #79C32F 51%, #79C32F 100%) repeat scroll 0 0 transparent;
+    border: 2px solid #000000;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    height: 39px;
+    line-height: 35px;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    width: 45px;
+    margin: 0 !important;
+    min-width: 0 !important;
+  }
 }
