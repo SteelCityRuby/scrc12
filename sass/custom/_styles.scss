@@ -26,7 +26,7 @@ html {
 }
 body {
   max-width: none;
-  background: #000 url(/images/scrc/scrc-hugs.jpg) 0 -100px;
+  background: #000;
   color: #000;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -728,8 +728,17 @@ body > nav {
 
 /* =launchrock copying
    ------------------------------------------------------------------ */
+#main {
+  position: relative;
+  overflow: hidden;
+}
 body > div, body > div > div {
  background: transparent;
+}
+body > footer {
+  position: absolute;
+  width: 100%;
+  padding: 1em 0;
 }
 .twitter-bootstrap-header {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
@@ -762,9 +771,7 @@ body > div, body > div > div {
   max-width: 378px;
   text-align: center;
   @media(max-width:408px){
-    margin-left: -20px;
-    margin-right: -20px;
-    margin-top: 70px;
+    margin: 70px -20px 20px -20px;
   }
 
   h2 {
@@ -815,5 +822,15 @@ body > div, body > div > div {
     width: 45px;
     margin: 0 !important;
     min-width: 0 !important;
+  }
+}
+img.background-hugs-scales-for-justin {
+  height: 100%;
+  max-width: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media(max-width:408px){
+    left: -300px;
   }
 }
