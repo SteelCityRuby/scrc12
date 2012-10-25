@@ -1,2 +1,2 @@
-rvm use --create 1.9.2@scrc
+rvm use --create 1.9.3@scrc
 export PATH="./.bin:$PATH"
