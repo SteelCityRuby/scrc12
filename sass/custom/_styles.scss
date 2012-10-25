@@ -735,15 +735,16 @@ body > div, body > div > div {
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.65);
   color: #FFFFFF;
   font-size: 12px;
-  height: 38px;
+  line-height: 1.2;
   left: 0;
   margin: 0 0 50px;
   position: absolute;
   text-align: center;
   top: 0;
   width: 100%;
+  padding-bottom: 12px;
   p {
-    margin: 12px 0;
+    margin: 12px 0 0 0;
   }
 }
 
@@ -757,8 +758,14 @@ body > div, body > div > div {
   color: #FFFFFF;
   padding: 18px 15px 30px;
   position: relative;
-  width: 378px;
+  min-width: 250px;
+  max-width: 378px;
   text-align: center;
+  @media(max-width:408px){
+    margin-left: -20px;
+    margin-right: -20px;
+    margin-top: 70px;
+  }
 
   h2 {
     font-size: 27px;
@@ -787,8 +794,10 @@ body > div, body > div > div {
     font-size: 14px;
     margin: 0 4px 0 35px;
     padding: 9px 11px;
-    width: 230px;
-
+    min-width: 187px;
+    @media(max-width:408px){
+      margin-left: 7px;
+    }
   }
   #mc_embed_signup input.button {
     background: -moz-linear-gradient(center top , #D5ECBE 0%, #96D05C 3%, #84C841 49%, #79C32F 51%, #79C32F 100%) repeat scroll 0 0 transparent;
