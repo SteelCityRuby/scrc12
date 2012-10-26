@@ -25,6 +25,7 @@ html {
   background: #000;
 }
 body {
+  background: #000 url(/images/scrc/metal-bg.jpg);
   max-width: none;
   background: #000;
   color: #000;
@@ -41,8 +42,10 @@ a:hover {
   background: #000;
 }
 #main {
-  margin: 0 auto;
-  padding: 0;
+  background: url(/images/scrc/main-bg.png);
+  max-width: 960px;
+  margin: -10px auto 0;
+  padding: 10px 0 0;
   border: 1px solid #898989;
   border-width: 0 1px;
 }
@@ -728,9 +731,12 @@ body > nav {
 
 /* =launchrock copying
    ------------------------------------------------------------------ */
-#main {
+body#index #main {
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
+  padding: 0;
+  max-width: none;
 }
 body > div, body > div > div {
  background: transparent;
@@ -824,7 +830,11 @@ body > footer {
     min-width: 0 !important;
   }
 }
-img.background-hugs-scales-for-justin {
+body img.background-hugs-scales-for-justin {
+  display: none;
+}
+body#index img.background-hugs-scales-for-justin {
+  display: block;
   height: 100%;
   max-width: none;
   position: absolute;
