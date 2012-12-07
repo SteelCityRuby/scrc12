@@ -16,3 +16,4 @@ group :development do
 end
 
 gem 'sinatra', '1.2.6'
+gem 'rack-subdomain', :github => "mattt/rack-subdomain", :branch => "master"
