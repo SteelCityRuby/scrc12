@@ -1,10 +1,8 @@
 ## Overview
 
-This is the official website for [Steel City Ruby Conf](http://steelcityrubyconf.org). It's base on Octopress.
+This is the official website for [Steel City Ruby '12](http://2012.steelcityruby.org/) and remains for historical purposes.
 
-## TODO
-
-* Update contact for harassment to organizers@steelcityrubyconf.org
+If you're looking for the Steel City Ruby '13 website, it's in [another castle](https://github.com/SteelCityRuby/steelcityruby.github.com).
 
 ## Development QuickStart
 
