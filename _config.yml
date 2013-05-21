@@ -28,6 +28,10 @@ email:
 root: /
 permalink: /blog/:year/:month/:day/:title/
 source: source
+#to archive a version of the site:
+#  * change destination to be `public/archive/:subdomain` where :subdomain is probably a year then
+#  * run `bundle exec rake generate` then
+#  * change destination back to `public`
 destination: public
 plugins: plugins
 code_dir: downloads/code

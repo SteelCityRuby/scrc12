@@ -1,3 +1,11 @@
+GIT
+  remote: git://github.com/mattt/rack-subdomain.git
+  revision: 2c0065ad2216b51dfc3b20f90e58dd88810011f6
+  branch: master
+  specs:
+    rack-subdomain (0.1.0)
+      rack (>= 1.2.0, <= 2.0.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -58,6 +66,7 @@ DEPENDENCIES
   liquid (= 2.2.2)
   pygments.rb
   rack
+  rack-subdomain!
   rake
   rb-fsevent (~> 0.9.1)
   rdiscount

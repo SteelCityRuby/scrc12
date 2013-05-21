@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Why You Shouldn't Code Alone | Steel City Ruby Conf</title>
+  <meta name="author" content="">
+
+  
+  <meta name="description" content="I work for a decent sized manufacturing company in the Pittsburgh area. I am the
+only ruby developer. We have another developer on staff, but our &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone">
+  <link href="/favicon.png" rel="icon">
+  <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="http://steelcityrubyconf.org/atom.xml" rel="alternate" title="Steel City Ruby Conf" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<script>
+jQuery(function($) {
+  $('dt').hover(function() {
+    var bio = $(this).next('dd').html();
+    $('#mini-bio').html(bio);
+  });
+  
+  $('.day-selector').click(function() {
+    $('.day-selector').removeClass('active');
+    $(this).addClass('active');
+    var id = $(this).get(0).id;
+    $('.day-schedule').hide();
+    console.log("#day-" + id.split('-')[1]);
+    $("#day-" + id.split('-')[1]).show();
+    console.log($("#day-saturday"));
+    return false;
+  });
+});
+</script>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-30942395-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body  id="post"   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">Steel City Ruby Conf</a></h1>
+  
+    <h2>Pittsburgh's First Ruby Conference</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation">
+
+
+
+<ul class="main-navigation">
+  <li id="link-home" class="logo"><a href="/"><span>Home</span></a></li>
+  <li id="link-conference"><a href="/conference"><span>The Conference</span></a></li>
+  <li id="link-city"><a href="/city"><span>The City</span></a></li>
+  <li id="link-sponsors"><a href="/sponsors"><span>The Sponsors</span></a></li>
+  <li id="link-blog"><a href="/blog"><span>The Blog</span></a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div id="banner">
+        <p>You are peering into the past of SCRC. <a href="http://steelcityrubyconf.org/">Back to the future!</a></p>
+        <p>SCRC 2012 is SOLD OUT! Did you miss getting tickets? Still want to go an awesome Ruby conference that weekend? Go to Cascadia Ruby instead! <a href="http://cascadiaruby.com/">cascadiaruby.com</a> / <a href="https://twitter.com/cascadiaruby">@cascadiaruby</a>
+        </p>
+      </div>
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+    
+      <h1 class="entry-title">Why You Shouldn't Code Alone</h1>
+    
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-04T08:03:00-04:00" pubdate data-updated="true">May 4<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>I work for a decent sized manufacturing company in the Pittsburgh area. I am the
+only ruby developer. We have another developer on staff, but our
+responsibilities don&#8217;t usually overlap and he doesn&#8217;t know ruby. After joining
+this company, I was eventually tasked with writing web apps. Now, my background
+is Computer Engineering and I spent a considerable time learning lower level
+programming, C/C++ and even Assembly. I thought it would be fun to learn, so I
+got some books and got to work.</p>
+
+<p>Why was this bad? It really wasn&#8217;t. Learning a new language and framework was a
+lot of fun. BUT BUT BUT; it was painful at times. I had no resources besides
+books, Google, and online mailing lists to find answers. Granted they were very
+helpful, but I had no idea what I was missing. I would spend hours trying to
+figure out some obscure bug in my code, or waiting for an answer on Stack
+Overflow. I was getting ever more frustrated, especially with the speed that
+Rails was moving at the time. I felt like a huge failure. How dumb could I be?
+All of these cool people were making awesome stuff with Rails. What&#8217;s my
+problem?!!!</p>
+
+<p>Then I heard about these Ruby Brigades that were forming. Lo and behold,
+Pittsburgh was forming one. I almost didn&#8217;t go. I was afraid. I knew I would not
+know a single person there. I was obviously incapable of learning. For some
+reason, I decided to go. Guess what, I didn&#8217;t know anyone there. Slowly I
+started to meet people and talk about what I was doing. I&#8217;ll stress that this
+took time, several meetings. As I slowly got over my anxiety, I started to make
+friends and share my problems with Ruby. They challenged me to get better, and
+they helped me when I got stuck. It was awesome.</p>
+
+<p>Ever since, I have continued to have great experiences and new opportunities.
+After hearing two people talking about <a href="http://mendicantuniversity.org/">Mendicant University</a>, I applied. I actually wasn&#8217;t
+accepted the first time. This should have been devastating for me, but once
+again my new friends came to the rescue. Steve Klabnik messaged me and told me I
+had just missed the cutoff, that it came down to several of us and only a few
+open spots. He encouraged me to apply again. I did, and I completed the core
+skills course. Yay! I&#8217;ve got involved with planning this conference. I&#8217;ve even
+sent a few pull requests to open source projects, like <a href="http://hackety.com/">Hackety Hack</a>. It&#8217;s hard to describe how much this has changed me,
+submitting to open source is something I never really thought I could do. I
+still screw up and feel stupid, but I know that I&#8217;m not the only one.</p>
+
+<p>Don&#8217;t code alone. Get involved. Meet new people. Just coding for a day job is
+fine, but there is a whole other world out there.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Corey Purcell</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-05-04T08:03:00-04:00" pubdate data-updated="true">May 4<span>th</span>, 2012</time>
+      
+<!--  -->
+
+    </p>
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/" title="Previous Post: How Steel City Ruby Conf Came to Be">&laquo; How Steel City Ruby Conf Came to Be</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2012/05/08/why-we-care-about-inclusivity/" title="Next Post: Why We Care About Inclusivity">Why We Care About Inclusivity &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><div id="harassment-notice">
+Steel City Ruby Conference is dedicated to a harassment-free conference experience for everyone. Please read our <a href="/policies#antiharassment">anti-harassment policy</a>.
+</div>
+
+<a href="http://twitter.com/#!/steelcityruby">Follow @SteelCityRuby on Twitter</a>
+<div class="credit">Powered by <a href="http://octopress.org">Octopress</a></div>
+
+</footer>
+  
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

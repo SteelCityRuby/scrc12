@@ -1,10 +1,14 @@
 require 'bundler/setup'
 require 'sinatra/base'
+require 'rack/subdomain'
 
 # The project root directory
 $root = ::File.dirname(__FILE__)
 
 class SinatraStaticServer < Sinatra::Base  
+
+  domain = "steelcityrubyconf.org"
+  use Rack::Subdomain, domain, to: "/archive/:subdomain"
 
   get(/.+/) do
     send_sinatra_file(request.path) {404}

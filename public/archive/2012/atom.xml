@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Steel City Ruby Conf]]></title>
+  <link href="http://steelcityrubyconf.org//atom.xml" rel="self"/>
+  <link href="http://steelcityrubyconf.org//"/>
+  <updated>2012-12-07T11:30:16-05:00</updated>
+  <id>http://steelcityrubyconf.org//</id>
+  <author>
+    <name><![CDATA[]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Announcement: Code Retreat Aug 5]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/06/09/announcement-code-retreat-aug-5/"/>
+    <updated>2012-06-09T10:09:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/06/09/announcement-code-retreat-aug-5</id>
+    <content type="html"><![CDATA[<p>We are very excited to announce that on Sunday, Aug 5 (the day after SCRC) there will be a Code Retreat! <a href="http://coderetreat.org/events/steel-city-ruby-conf-code-retreat">More details here</a>, and you need to register <a href="http://steelcityrubyconfcoderetreat.eventbrite.com/">on eventbrite</a>. It is free but there is a $15 deposit that is refunded when you attend.</p>
+
+<p>The event is organized by Justin Pihony and Jim Hurne. It&#8217;s being hosted and sponsored by <a href="http://www.4moms.com/">4moms</a>, a local company that does Ruby and is also in the Strip District, about 12 blocks (20 min walk) from SCRC&#8217;s venue.</p>
+
+<p>Corey Haines, one of the founders of Code Retreat, will be facilitating!</p>
+
+<p>If you&#8217;ve never done a Code Retreat before, it&#8217;s a day of practicing your craft without the pressure of trying to get something finished. You will be pairing (and rotating partners) all day, and you can use any language. There&#8217;s a lot more information on <a href="http://coderetreat.org/">coderetreat.org</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Stop the Celebrity Worship]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/29/stop-the-celebrity-worship/"/>
+    <updated>2012-05-29T09:44:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/05/29/stop-the-celebrity-worship</id>
+    <content type="html"><![CDATA[<p>Once[1] someone at a conference was attempting to convince me to attend Madison Ruby, and one of the reasons they gave
+for attending was &#8220;Steve Klabnik is speaking!!&#8221;</p>
+
+<p>Little did they know, I get to hear Steve&#8217;s opinions on everything at basically every Pittsburgh Ruby Brigade meeting
+each month. Seriously, we&#8217;ve tried to have him NOT speak and it&#8217;s impossible. (&lt;3 Steve!!!)</p>
+
+<p>It was strange to me that someone saw Steve as this Ruby community celebrity while I see him as a personal friend,
+someone I run into and talk to about normal person things. I always logically knew that celebrities are real people too,
+but it&#8217;s easy to get star-struck and forget this. Talking to Steve as a peer helped give me the confidence to
+talk to other Ruby celebrities in the same way.</p>
+
+<p>At conferences, one of the neat things is meeting in person the authors of blog posts, tutorials, books, libraries, and
+tools that you&#8217;ve used. It&#8217;s a great opportunity to let them know that you appreciate their work&#8211; they don&#8217;t hear that
+as often as they deserve to! But don&#8217;t let the conversation stop there&#8211; ask them what they think about the talks, ask
+what they&#8217;re working on now, and go from there.</p>
+
+<p>In a related vein, don&#8217;t spend all your time at a conference tracking down the celebrities. Talk to anyone around you,
+because there&#8217;s a good chance that they may be the celebrities of tomorrow.</p>
+
+<p>There are some careers, like NBA star, that people like me (at 5&#8217;4&#8221;) are never going to be able to attain. While there
+are still reasons like being in the right place at the right time that help people become well known, in the Ruby
+community it&#8217;s much more likely that if you learn, help people, and work hard that you will get to know enough people to
+be considered &#8220;well known&#8221; (if that&#8217;s what you want to do, of course). The current maintainer of bundler, Andre Arko,
+<a href="http://rubyrogues.com/045-rr-bundler-with-andre-arko/">described on Ruby Rogues</a> how he started by helping to answer
+questions, triaging tickets, offering patches, etc. Eventually he got commit access and is now one of the maintainers of
+an important Ruby tool. It could happen to you.</p>
+
+<p>So get to know those around you, help each other, learn from each other. Treat everyone with the respect you would treat
+a celebrity, but don&#8217;t get star-struck. Be the celebrities you admire.</p>
+
+<p><em>[1] This story actually happened to <a href="https://twitter.com/#!/coxandrew">Andrew Cox</a>, but we have a tradition of stealing his stories and telling them back to him.</em></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why We Care About Inclusivity]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/08/why-we-care-about-inclusivity/"/>
+    <updated>2012-05-08T20:55:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/05/08/why-we-care-about-inclusivity</id>
+    <content type="html"><![CDATA[<p>A major goal of Steel City Ruby Conf is for it to be a great first experience
+for someone who has never been to a Ruby conference before.  In her post about
+the inception of the conference, Carol discussed some of the factors we tried to
+account for, such as keeping costs down and planning activities with a new
+conference-goer in mind.  In addition to these things, we wanted to make sure
+that the conference would be a safe and inviting space for a variety of people,
+not just your average conference attendee.</p>
+
+<p>We kept this goal in mind when reaching out to speakers for the conference.  We
+wanted to increase the likelihood of attendees seeing people who they share
+something in common with, provide some new people with the opportunity to speak
+at a conference, and (most importantly) have great people give presentations that
+inspire others.  We are very excited about the people who will be speaking at
+Steel City Ruby Conf and think they will add to a great conference experience.
+Lindsey Bieda and Steve Klabnik are planning to speak about anti-oppression and
+tech, so they will be expanding on some topics related to inclusivity at the
+conference.</p>
+
+<p>A factor that discourages some people from attending conferences is concern
+about harassment or an uninviting environment.  The majority of conference
+participants are inviting and respectful of others, but occasionally someone&#8217;s
+poor judgement ends up diminishing what should be an awesome conference
+experience.  If you want some examples, go check out the
+<a href="http://geekfeminism.wikia.com/wiki/Timeline_of_incidents">timeline of incidents</a>
+at the Geek Feminism Wiki.</p>
+
+<p>The Steel City Ruby Conf organizers agreed early on that the conference should
+have an <a href="http://steelcityrubyconf.org/policies#antiharassment">anti-harassment policy</a>
+to help prevent incidents and provide a safe, harassment-free environment for
+everyone.  We adopted the policy suggested by the
+<a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">Geek Feminism Wiki</a>
+and are following many of their
+<a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment">other recommendations</a>.
+We are proud to join a growing list of conferences that implement these policies
+and encourage others to do the same to help promote inclusivity in our communities.</p>
+
+<p>Another important part of inclusivity is outreach. The average Ruby conference
+attendee who is already hooked into the community (following the right people,
+blogs, podcasts, mailing lists, etc.) probaby will have an easy time finding out
+about our conference. We wanted to make sure these were not the only people
+who got excited about Steel City Ruby Conf.  Our outreach efforts included local
+Ruby user groups, where many new people get their start in the community, and
+<a href="http://girldevelopit.com/">Girl Develop It</a>, a group that provides low-cost,
+judgment-free environments for learning software development.</p>
+
+<p>We hope that these efforts will make Steel City Ruby Conf an inviting and awesome
+experience for all people interested in attending!  Please feel free to post
+any questions about our policies on the <a href="http://groups.google.com/group/steel-city-ruby-conf">Google Group</a>.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why You Shouldn't Code Alone]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone/"/>
+    <updated>2012-05-04T08:03:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/05/04/why-you-shouldnt-code-alone</id>
+    <content type="html"><![CDATA[<p>I work for a decent sized manufacturing company in the Pittsburgh area. I am the
+only ruby developer. We have another developer on staff, but our
+responsibilities don&#8217;t usually overlap and he doesn&#8217;t know ruby. After joining
+this company, I was eventually tasked with writing web apps. Now, my background
+is Computer Engineering and I spent a considerable time learning lower level
+programming, C/C++ and even Assembly. I thought it would be fun to learn, so I
+got some books and got to work.</p>
+
+<p>Why was this bad? It really wasn&#8217;t. Learning a new language and framework was a
+lot of fun. BUT BUT BUT; it was painful at times. I had no resources besides
+books, Google, and online mailing lists to find answers. Granted they were very
+helpful, but I had no idea what I was missing. I would spend hours trying to
+figure out some obscure bug in my code, or waiting for an answer on Stack
+Overflow. I was getting ever more frustrated, especially with the speed that
+Rails was moving at the time. I felt like a huge failure. How dumb could I be?
+All of these cool people were making awesome stuff with Rails. What&#8217;s my
+problem?!!!</p>
+
+<p>Then I heard about these Ruby Brigades that were forming. Lo and behold,
+Pittsburgh was forming one. I almost didn&#8217;t go. I was afraid. I knew I would not
+know a single person there. I was obviously incapable of learning. For some
+reason, I decided to go. Guess what, I didn&#8217;t know anyone there. Slowly I
+started to meet people and talk about what I was doing. I&#8217;ll stress that this
+took time, several meetings. As I slowly got over my anxiety, I started to make
+friends and share my problems with Ruby. They challenged me to get better, and
+they helped me when I got stuck. It was awesome.</p>
+
+<p>Ever since, I have continued to have great experiences and new opportunities.
+After hearing two people talking about <a href="http://mendicantuniversity.org/">Mendicant University</a>, I applied. I actually wasn&#8217;t
+accepted the first time. This should have been devastating for me, but once
+again my new friends came to the rescue. Steve Klabnik messaged me and told me I
+had just missed the cutoff, that it came down to several of us and only a few
+open spots. He encouraged me to apply again. I did, and I completed the core
+skills course. Yay! I&#8217;ve got involved with planning this conference. I&#8217;ve even
+sent a few pull requests to open source projects, like <a href="http://hackety.com/">Hackety Hack</a>. It&#8217;s hard to describe how much this has changed me,
+submitting to open source is something I never really thought I could do. I
+still screw up and feel stupid, but I know that I&#8217;m not the only one.</p>
+
+<p>Don&#8217;t code alone. Get involved. Meet new people. Just coding for a day job is
+fine, but there is a whole other world out there.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How Steel City Ruby Conf Came to Be]]></title>
+    <link href="http://steelcityrubyconf.org//blog/2012/05/03/how-steel-city-ruby-conf-came-to-be/"/>
+    <updated>2012-05-03T22:19:00-04:00</updated>
+    <id>http://steelcityrubyconf.org//blog/2012/05/03/how-steel-city-ruby-conf-came-to-be</id>
+    <content type="html"><![CDATA[<p>Once upon a time, in an IRC room not so far away, a few people from the
+Pittsburgh Ruby Users Group were talking about the awesome time we had just had
+at Ruby Conf 2011. We were really excited and had lots of neat ideas, including
+this one:</p>
+
+<pre> carols10cents: we should have a conference in pittsburgh! </pre>
+
+
+<p>There was much agreement, and thus the brainstorming began! We have a google doc
+with all sorts of ideas. Some of those are being used this year, some were a bit
+too ambitious for our first year ;) We also called it &#8220;Project Octoconf&#8221; for a
+while so that we didn&#8217;t get stuck on picking a name&#8211; not because we have any
+affiliation with Github/octocat, but because we see Pittsburgh Ruby, and
+Pittsburgh in general, reaching into lots of different things and slowly taking
+over the world, quietly and for good, of course :D</p>
+
+<p>Since there are so many Ruby conferences though, what would make someone want to
+come to ours? Well, what <em>about</em> all those Ruby conferences? Where do you start?
+What if you&#8217;re not sure about this whole conference scene? What all goes on
+there? Won&#8217;t it be all people who have been going to conferences forever?</p>
+
+<p>So we decided to try to be the best Ruby conference for someone&#8217;s first Ruby
+conference. We feel strongly that interacting with the community at conferences
+is one of the great things about programming in Ruby, and we&#8217;d like to help
+people get into that.</p>
+
+<p>To that end, we&#8217;re trying to keep costs down (and Pittsburgh helps with that as
+it&#8217;s a relatively cheap city), do outreach to people who haven&#8217;t been to
+conferences before, and plan activities with a new conference goer in mind.</p>
+
+<p>We are so grateful and excited for all the progress we&#8217;ve made and all the
+people who have helped us so far, and we hope you&#8217;ll join us for the culmination
+of these efforts in August!</p>
+]]></content>
+  </entry>
+  
+</feed>
