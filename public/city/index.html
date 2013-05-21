@@ -19,7 +19,7 @@
 
   
   <link rel="canonical" href="http://steelcityrubyconf.org//city">
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
@@ -36,7 +36,7 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
-  
+
   $('.day-selector').click(function() {
     $('.day-selector').removeClass('active');
     $(this).addClass('active');
@@ -47,7 +47,26 @@ jQuery(function($) {
     console.log($("#day-saturday"));
     return false;
   });
-});
+
+  $("<select />").prependTo("#mobile-nav");
+  $("<option />", {
+    "selected": "selected",
+    "value"   : "",
+    "text"    : "Go to..."
+  }).appendTo("nav select");
+
+  $("nav a").each(function() {
+    var el = $(this);
+    $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.children("span:first-child").text()
+    }).appendTo("nav select");
+  });
+
+  $("nav select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
+ });
 </script>
 
   
@@ -86,12 +105,15 @@ jQuery(function($) {
   <li id="link-sponsors"><a href="/sponsors"><span>The Sponsors</span></a></li>
   <li id="link-blog"><a href="/blog"><span>The Blog</span></a></li>
 </ul>
+<div id="mobile-nav">
+  <a href="/">
+    <img src="/images/scrc/header-logo.png" />
+  </a>
+</div>
 
 </nav>
   <div id="main">
     <div id="content">
-      <div id="banner">SCRC 2012 is SOLD OUT! Did you miss getting tickets? Still want to go an awesome Ruby conference that weekend? Go to Cascadia Ruby instead! <a href="http://cascadiaruby.com/">cascadiaruby.com</a> / <a href="https://twitter.com/cascadiaruby">@cascadiaruby</a>
-      </div>
       <div>
 <article role="article">
   
@@ -125,7 +147,19 @@ jQuery(function($) {
 
 <h3>Getting Here</h3>
 <p>
-  Pittsburgh International Airport is located west of downtown. It is served by most major airlines and there are many convenient direct flights. You can then reach downtown by taking <a href="http://www.portauthority.org/PAAC/apps/pdfs/28X.PDF">the 28X, a Port Authority bus</a> that runs about every half hour and costs $3.25 one way. You can also take a taxi, <a href="https://www.supershuttle.com/Locations/PITAirportShuttlePittsburgh.aspx">SuperShuttle</a>, or rent a car.
+  Pittsburgh International Airport is located west of downtown. It is served by most major airlines and there are many convenient direct flights. You can then reach downtown by taking <a href="http://www.portauthority.org/PAAC/apps/pdfs/28X.PDF">the 28X, a Port Authority bus</a> that runs about every half hour and costs $3.25 one way. You can also take a taxi, <a href="https://www.supershuttle.com/Locations/PITAirportShuttlePittsburgh.aspx">SuperShuttle</a>, or rent a car. Some downtown hotels have shuttle services.
+</p>
+<p>
+  <strong>Detailed instructions for taking the 28X:</strong>
+  <ul>
+    <li>Follow the signs in the airport for Ground Transportation until you are outside at a curb.</li>
+    <li>Look for a sign sitting on the ground that says 28X; if you see a group of people standing around, it&#8217;s likely nearby.</li>
+    <li>The bus runs about every 1/2 hr, departing on the hour and half hour from the airport, from 5:30am until midnight on weekdays. <a href="http://www.portauthority.org/PAAC/apps/pdfs/28X.PDF">Check the schedule for exact times.</a></li>
+    <li>When the bus arrives, get on it and pay $3.25 per person (exact change only).</li>
+    <li>The ride to downtown takes 40 min to an hour, depending on traffic. </li>
+    <li>The closest place to the conference venue to get off is 7th Ave and William Penn Plaza. It is about a 10 min walk from there to the Heinz History Center.</li>
+    <li>Check out <a href="https://maps.google.com/maps?saddr=Pittsburgh+International+Airport-Pit,+Pittsburgh+International+Airport+(PIT),+1000+Airport+Boulevard,+Pittsburgh,+PA&daddr=Senator+John+Heinz+History+Center,+1212+Smallman+Street,+Pittsburgh,+PA&hl=en&ll=40.443408,-79.995049&spn=0.00258,0.005681&sll=40.431368,-79.9805&sspn=0.165162,0.363579&geocode=FXPqaQIdvWI3-yFt9Dy-ZgAgKynNa5G09lw0iDFt9Dy-ZgAgKw%3BFTQqaQIdo2k7-yGLYOnZkIWZRimvtoHN4_M0iDGLYOnZkIWZRg&oq=Heinz&dirflg=r&ttype=now&noexp=0&noal=0&sort=def&mra=ls&t=m&z=18&iwloc=statictransit:4&start=0">the Google Transit directions</a> for more details.</li>
+  </ul>
 </p>
 <div id="direct-flights" class="clearfix">
   <h4>Cities with direct flights to Pittsburgh and length of flight:</h4>
@@ -164,6 +198,41 @@ jQuery(function($) {
   The <a href="http://www.amtrak.com/servlet/ContentServer?pagename=Amtrak/HomePage">Amtrak</a> and <a href="https://www.greyhound.com/">Greyhound</a> stations are also very close to the venue, and <a href="http://us.megabus.com">Megabus</a> drops off at the convention center which is also nearby.
 </p>
 
+<img src="/images/scrc/map_sm.png" />
+<h3>Conference</h3>
+<h4>Heinz History Center - 1212 Smallman Street</h4>
+<p>Most of the conference will take place here.</p>
+
+<h3>ModCloth Party</h3>
+<h4>Finnigan&#8217;s Wake - 20 East General Robinson Street (0.8mi)</h4>
+<p>The party sponsored by <a href="http://modcloth.com">ModCloth</a> takes place at Finnigan&#8217;s Wake on Friday night.  You can get there via a walk across one of the city&#8217;s many bridges.  We will also have a bus running between the conference and party locations throughout the evening.</p>
+
+<h3>Food</h3>
+<p>The restaurants below have agreed to provide discounts to our attendees during the conference.  Please be sure to wear your conference id and let the restauarant know you are interested in the discount.</p>
+
+<h4>Lidia’s (0.2mi)</h4>
+<p>15% off pasta tasting trio, dinner only 3rd & 4th</p>
+
+<h4>Sonoma Grille - 947 Penn Avenue (0.8mi)</h4>
+<p>15% off lunch</p>
+
+<h4>Wholey’s - 1711 Penn Avenue (0.5mi)</h4>
+<p>10% off lunch</p>
+
+<h4>Pittsburgh Public Market - 2100 Smallman Street (0.6mi)</h4>
+<p>Soup Nancy’s - Bowl of soup, grilled cheese, and beverage for $7 OR 10% off other menu items during lunch
+</p>
+
+<h4>Chicken Latino - 155 21st Street (0.6mi)</h4>
+<p>10% off lunch</p>
+
+
+<h3>Local Attractions</h3>
+<h4>Warhol Museum - 117 Sandusky Street (0.8mi)</h4>
+<p>The Andy Warhol Museum is just a couple blocks away from the ModCloth party on Friday night.  On Friday nights, the Warhol has “Good Fridays” - half-off admission and a cash bar 5-10pm.</p>
+
+<h4>PNC Park</h4>
+<p>The home of the Pittsburgh Pirates is just a few blocks away from the party.</p>
   
     <footer>
       

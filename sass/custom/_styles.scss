@@ -41,7 +41,7 @@ a:hover {
   background: #000;
 }
 #main {
-  width: 960px;
+  max-width: 960px;
   margin: -10px auto 0;
   padding: 10px 0 0;
   background: url(/images/scrc/main-bg.png);
@@ -74,6 +74,7 @@ article img {
   -moz-box-shadow: 3px 3px 8px #555; /* Firefox */
   -webkit-box-shadow: 3px 3px 8px #555; /* Safari, Chrome */
   box-shadow: 3px 3px 8px #555; /* CSS3 */
+  width: 100%;
 }
 article h2 {
   background: transparent;
@@ -99,7 +100,7 @@ body > nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 960px;
+  max-width: 960px;
   margin: auto;
 }
 body > nav ul li,
@@ -166,9 +167,39 @@ nav li.logo a:hover,
 nav li.logo a:active {
   text-indent: -9999px;
   background: url(/images/scrc/header-logo.png) no-repeat 10px 50%;
+  @media(max-width:860px){
+    -webkit-background-size: 100% auto;
+    -moz-background-size: 100% auto;
+    background-size: 90% auto;
+  }
 }
 nav li.logo {
   background: url(/images/scrc/header-link-pipe.png) no-repeat 100% 0;
+}
+
+body > nav #mobile-nav {
+  display: none;
+  width: 100%;
+  a {
+    background: none;
+    float: left;
+  }
+  img {
+    margin: 8px 8px 0;
+  }
+
+  select
+  {
+    float:right;
+    margin-top: 16px;
+    margin-right: 8px;
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 768px) {
+  body > nav ul     { display: none; }
+  body > nav #mobile-nav { display: inline-block; }
 }
 
 /* =footer
@@ -201,14 +232,18 @@ body#index h1 {
   height: 129px;
   line-height: 1;
   text-indent: -99999px;
+  @media (max-width: 768px) {
+    display:none;
+  }
 }
 #index .photo {
   float: left;
-  width: 480px;
+  margin-right: 20px;
+  width:50%;
 }
 #summary {
   float: left;
-  width: 430px;
+  max-width: 430px;
   margin-top: -8px;
 }
 #date {
@@ -254,9 +289,9 @@ body#index h1 {
 }
 #mini-speaker-photos {
   padding-top: 0px;
-  margin: 0 0 150px;
+  margin: 0 0 15px;
   float: left;
-  width: 660px;
+  max-width: 550px;
 }
 #mini-speaker-photos img {
   border: 1px solid #fff;
@@ -266,9 +301,10 @@ body#index h1 {
 #mini-bio {
   display: block;
   float: left;
-  width: 240px;
+  max-width: 350px;
   font-size: 80%;
   line-height: 1.4;
+  height: 380px;
 }
 #mini-bio h4 {
   font-size: 120%;
@@ -399,8 +435,11 @@ article footer time {
 
 /* =conference
 ------------------------------------------------------------------ */
-img#heinz-history-center {
+#conference .photo {
   width: 300px;
+}
+img#heinz-history-center {
+  max-width: 300px;
 }
 .map-frame {
   float: left;
@@ -423,18 +462,18 @@ img#heinz-history-center {
 .speaker {
   clear: both;
 }
-#schedule-days,
+.schedule-days,
 #day-friday,
 #day-saturday {
   margin: 0 -20px;
 }
-#schedule-days {
+.schedule-days {
   background: #ccc url(/images/scrc/schedule-header-bg.png) repeat-x 0 0;
 }
-#schedule-days a:link,
-#schedule-days a:visited,
-#schedule-days a:hover,
-#schedule-days a:active {
+.schedule-days a:link,
+.schedule-days a:visited,
+.schedule-days a:hover,
+.schedule-days a:active {
   color: #fff;
   text-decoration: none;
   font-size: 90%;
@@ -444,7 +483,7 @@ img#heinz-history-center {
   float: left;
   width: 478px;
 }
-#schedule-days .day a.active {
+.schedule-days .day a.active {
   background: #000 url(/images/scrc/schedule-active-bg.png) repeat-x 0 0;
 }
 #schedule-friday,
@@ -524,6 +563,37 @@ ul.speaker-trivia li {
   margin: 0.25em 0;
 }
 
+#schedule-days-mobile {
+  display: none;
+}
+
+#day-saturday {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .schedule-days .day:first-child {
+    width: 100%;
+  }
+  #schedule-days .day:last-child {
+    display: none;
+  }
+  #schedule-days-mobile {
+    display: block;
+    margin-top: 50px;
+  }
+  #day-saturday {
+    display: block;
+  }
+  .speaker-summary {
+    margin-left: 0;
+  }
+  .speaker-photo {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
 /* =sponsors
 ------------------------------------------------------------------ */
 .sponsor-group h3 {
@@ -537,7 +607,7 @@ ul.speaker-trivia li {
 }
 .sponsor-card {
   background: #fff;
-  width: 300px;
+  width: 30%;
   float: left;
 }
 .sponsor-card .inside {
@@ -572,15 +642,24 @@ ul.speaker-trivia li {
   text-decoration: underline;
 }
 .sponsor-blurb {
-  margin-left: 300px;
-  padding: 15px 20px;
+  margin-left: 33%;
+  padding: 0;
   line-height: 1.6;
   font-size: 110%;
+  background: #373737;		/* this is a hack, I don't understand... */
   a:link,
   a:visited,
   a:hover,
   a:active {
     color: #fff;
+  }
+  p {
+    background: #373737;		/* this is a hack, I don't understand... */
+    padding: 15px 20px;
+    margin: 0;
+  }
+  ul {
+
   }
 }
 #sponsor-levels {

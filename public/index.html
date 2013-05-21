@@ -19,7 +19,7 @@
 
   
   <link rel="canonical" href="http://steelcityrubyconf.org/">
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
@@ -36,7 +36,7 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
-  
+
   $('.day-selector').click(function() {
     $('.day-selector').removeClass('active');
     $(this).addClass('active');
@@ -47,7 +47,26 @@ jQuery(function($) {
     console.log($("#day-saturday"));
     return false;
   });
-});
+
+  $("<select />").prependTo("#mobile-nav");
+  $("<option />", {
+    "selected": "selected",
+    "value"   : "",
+    "text"    : "Go to..."
+  }).appendTo("nav select");
+
+  $("nav a").each(function() {
+    var el = $(this);
+    $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.children("span:first-child").text()
+    }).appendTo("nav select");
+  });
+
+  $("nav select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
+ });
 </script>
 
   
@@ -86,12 +105,15 @@ jQuery(function($) {
   <li id="link-sponsors"><a href="/sponsors"><span>The Sponsors</span></a></li>
   <li id="link-blog"><a href="/blog"><span>The Blog</span></a></li>
 </ul>
+<div id="mobile-nav">
+  <a href="/">
+    <img src="/images/scrc/header-logo.png" />
+  </a>
+</div>
 
 </nav>
   <div id="main">
     <div id="content">
-      <div id="banner">SCRC 2012 is SOLD OUT! Did you miss getting tickets? Still want to go an awesome Ruby conference that weekend? Go to Cascadia Ruby instead! <a href="http://cascadiaruby.com/">cascadiaruby.com</a> / <a href="https://twitter.com/cascadiaruby">@cascadiaruby</a>
-      </div>
       <div>
 <article role="article">
   
@@ -105,9 +127,6 @@ jQuery(function($) {
     <div id="date">
       <p id="where">Pittsburgh, PA</p>
       <p id="when">Aug 3rd - 4th</p>
-    </div>
-    <div id="register">
-      <a href="http://www.showclix.com/event/227580" class="button">Register</a>
     </div>
 
     <p>
@@ -233,8 +252,8 @@ jQuery(function($) {
         <dd>
           <h4>Mattt Thompson</h4>
             Mattt Thompson is the Mobile Lead at <a href="http://heroku.com/">Heroku</a> and a member of the
-            CloudApp team. Steel City Ruby Conf is a return to his roots, both as a native
-            Pittsburgher, and a long-time Rubyist.
+            <a href="http://getcloudapp.com/">CloudApp</a> team. Steel City Ruby Conf is a return to his roots,
+            both as a native Pittsburgher, and a long-time Rubyist.
         </dd>
         <dt>
           <img src="/images/scrc/speakers/lindsey-bieda.jpg" alt="Lindsey Bieda" title="Lindsey Bieda"/>
@@ -248,6 +267,13 @@ jQuery(function($) {
             open source ideals and programming education to all. Lindsey promotes the
             discussion of gender and privilege in technology through her somewhat
             controversial blog.
+        </dd>
+        <dt>
+          <img src="/images/scrc/speakers/andrew-clay-shafer.jpg" alt="Andrew Clay Shafer" title="Andrew Clay Shafer"/>
+        </dt>
+        <dd>
+          <h4>Andrew Clay Shafer</h4>
+            Andrew Clay Shafer has been involved in technology in various capacity for the better part of two decades. He has programmed, done tech support, QA&#8217;d, UX designed, managed, founded, pestered, cajoled, loved and lost.
         </dd>
       </dl>
     </div>

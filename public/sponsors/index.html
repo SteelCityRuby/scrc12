@@ -19,7 +19,7 @@
 
   
   <link rel="canonical" href="http://steelcityrubyconf.org//sponsors">
-  <link href="/favicon.png" rel="icon">
+  <link href="/favicon.ico" rel="icon">
   <link href="http://cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script>
@@ -36,7 +36,7 @@ jQuery(function($) {
     var bio = $(this).next('dd').html();
     $('#mini-bio').html(bio);
   });
-  
+
   $('.day-selector').click(function() {
     $('.day-selector').removeClass('active');
     $(this).addClass('active');
@@ -47,7 +47,26 @@ jQuery(function($) {
     console.log($("#day-saturday"));
     return false;
   });
-});
+
+  $("<select />").prependTo("#mobile-nav");
+  $("<option />", {
+    "selected": "selected",
+    "value"   : "",
+    "text"    : "Go to..."
+  }).appendTo("nav select");
+
+  $("nav a").each(function() {
+    var el = $(this);
+    $("<option />", {
+        "value"   : el.attr("href"),
+        "text"    : el.children("span:first-child").text()
+    }).appendTo("nav select");
+  });
+
+  $("nav select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
+ });
 </script>
 
   
@@ -86,12 +105,15 @@ jQuery(function($) {
   <li id="link-sponsors"><a href="/sponsors"><span>The Sponsors</span></a></li>
   <li id="link-blog"><a href="/blog"><span>The Blog</span></a></li>
 </ul>
+<div id="mobile-nav">
+  <a href="/">
+    <img src="/images/scrc/header-logo.png" />
+  </a>
+</div>
 
 </nav>
   <div id="main">
     <div id="content">
-      <div id="banner">SCRC 2012 is SOLD OUT! Did you miss getting tickets? Still want to go an awesome Ruby conference that weekend? Go to Cascadia Ruby instead! <a href="http://cascadiaruby.com/">cascadiaruby.com</a> / <a href="https://twitter.com/cascadiaruby">@cascadiaruby</a>
-      </div>
       <div>
 <article role="article">
   
@@ -126,7 +148,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Think it&#8217;s impossible to experience the thrill and perks of a Silicon Valley job when living in the City of Champions? Well then, you haven’t met ModCloth! Retailer of indie designer fashion and decor, ModCloth.com is growing at light speed thanks to its innovative technology, great vision, and awesome group of employees. Using Ruby on Rails and agile practices, the ModCloth Team is crushing the competition as they pursue their mission of disrupting the world of social commerce!
+      <p>
+        Think it&#8217;s impossible to experience the thrill and perks of a Silicon Valley job when living in the City of Champions? Well then, you haven’t met ModCloth! Retailer of indie designer fashion and decor, ModCloth.com is growing at light speed thanks to its innovative technology, great vision, and awesome group of employees. Using Ruby on Rails and agile practices, the ModCloth Team is crushing the competition as they pursue their mission of disrupting the world of social commerce!
+      </p>
     </div>
   </div>
 </div>
@@ -143,7 +167,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Penn United Technologies, Inc. provides manufacturing solutions for customers needing precision components or precision-assembled products. Our complete range of manufacturing services allows customers to simplify their supply chain logistics by using Penn United&#8217;s &#8220;one-stop shop&#8221; manufacturing services. We use Ruby on Rails to build internal applications to streamline many areas of business. Everything from handling scheduling of production runs to inspecting final parts can pass through Rails.
+      <p>
+        Penn United Technologies, Inc. provides manufacturing solutions for customers needing precision components or precision-assembled products. Our complete range of manufacturing services allows customers to simplify their supply chain logistics by using Penn United&#8217;s &#8220;one-stop shop&#8221; manufacturing services. We use Ruby on Rails to build internal applications to streamline many areas of business. Everything from handling scheduling of production runs to inspecting final parts can pass through Rails.
+      </p>
     </div>
   </div>
 
@@ -160,7 +186,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Littlelines is a distinguished design and development studio nestled in the midwest with expertise in Ruby on Rails web development. We launched in 2007 with a single goal: to craft awesome applications. We&#8217;ve been doing just that ever since. Our clients range from large corporations, to small startups with unique ideas. Passionate about helping others reach their goals, we are driven to be the best at what we do.
+      <p>
+        Littlelines is a distinguished design and development studio nestled in the midwest with expertise in Ruby on Rails web development. We launched in 2007 with a single goal: to craft awesome applications. We&#8217;ve been doing just that ever since. Our clients range from large corporations, to small startups with unique ideas. Passionate about helping others reach their goals, we are driven to be the best at what we do.
+      </p>
     </div>
   </div>
 
@@ -177,7 +205,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      EdgeCase is a team of talented software artisans who love solving problems. Our dedicated group of developers and artists have individual expertise in areas such as usability, security, enterprise application integration, and business analysis. Passionate about software development, we are driven by the challenge of what we do.
+      <p>
+        EdgeCase is a team of talented software artisans who love solving problems. Our dedicated group of developers and artists have individual expertise in areas such as usability, security, enterprise application integration, and business analysis. Passionate about software development, we are driven by the challenge of what we do.
+      </p>
     </div>
   </div>
 
@@ -191,7 +221,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Since its founding in 2003, medSage has focused on one goal, providing tools to help homecare providers do a better job of following up with their patients on a more timely, proactive and cost effective basis. As a former Tech50 Rising-Star winner and one of the first companies in Pittsburgh to use Ruby and Rails in a production environment, its technology is created by a group of passionate developers, who are encouraged to leave their comfort zone to come up with innovative solutions.
+      <p>
+        Since its founding in 2003, medSage has focused on one goal, providing tools to help homecare providers do a better job of following up with their patients on a more timely, proactive and cost effective basis. As a former Tech50 Rising-Star winner and one of the first companies in Pittsburgh to use Ruby and Rails in a production environment, its technology is created by a group of passionate developers, who are encouraged to leave their comfort zone to come up with innovative solutions.
+      </p>
     </div>
   </div>
 
@@ -208,7 +240,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Engine Yard delivers you commercial grade, production-ready PaaS solutions that enable you to focus 100% of your time on building your app, so that you deploy more quickly, scale with ease, and then continue to innovate without getting slowed down by operations.
+      <p>
+        Engine Yard delivers you commercial grade, production-ready PaaS solutions that enable you to focus 100% of your time on building your app, so that you deploy more quickly, scale with ease, and then continue to innovate without getting slowed down by operations.
+      </p>
     </div>
   </div>
 
@@ -225,7 +259,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Wijmo is a complete kit of over 40 UI widgets with everything from interactive menus to rich charts. Built with HTML5, jQuery, CSS3, and SVG, Wijmo widgets make your applications suitable for Today&#8217;s Web. If you know jQuery, you know Wijmo. Complete with documentation and professional support, every widget is hand-crafted and includes premium themes. Wijmo is created by ComponentOne, headquartered in Pittsburgh, Pennsylvania. Visit Wijmo on the web at <a href="http://www.wijmo.com">http://www.wijmo.com</a> or follow us on Twitter <a href="http://www.twitter.com/#!/wijmo">@wijmo</a>!
+      <p>
+        Wijmo is a complete kit of over 40 UI widgets with everything from interactive menus to rich charts. Built with HTML5, jQuery, CSS3, and SVG, Wijmo widgets make your applications suitable for Today&#8217;s Web. If you know jQuery, you know Wijmo. Complete with documentation and professional support, every widget is hand-crafted and includes premium themes. Wijmo is created by ComponentOne, headquartered in Pittsburgh, Pennsylvania. Visit Wijmo on the web at <a href="http://www.wijmo.com">http://www.wijmo.com</a> or follow us on Twitter <a href="http://www.twitter.com/#!/wijmo">@wijmo</a>!
+      </p>
     </div>
   </div>
 
@@ -242,7 +278,33 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      <strong>Level up in real life.</strong> In video games, you exchange experience points for skills when you &#8220;level up&#8221;. In the real world, you exchange your time. With the explosion of learning resources, choosing how to allocate your time can be overwhelming. SkillBonsai separates the wheat from the chaff and gives you the most direct path to reach the next level. Gain experience, earn badges, and never wonder again, &#8220;what should I do next?&#8221;
+      <p>
+        <strong>Level up in real life.</strong> In video games, you exchange experience points for skills when you &#8220;level up&#8221;. In the real world, you exchange your time. With the explosion of learning resources, choosing how to allocate your time can be overwhelming. SkillBonsai separates the wheat from the chaff and gives you the most direct path to reach the next level. Gain experience, earn badges, and never wonder again, &#8220;what should I do next?&#8221;
+      </p>
+    </div>
+  </div>
+
+  <div id="fourmoms" class="sponsor clearfix">
+    <div class="sponsor-card">
+      <div class="inside">
+        <a href="http://4moms.com/"><img src="/images/scrc/logo-4moms.png" alt="4moms" title="4moms" /></a>
+        <div class="web">
+          <a href="http://4moms.com/careers">4moms.com/careers</a>
+        </div>
+        <div class="web">
+          <a href="http://4moms.com/">4moms.com</a>
+        </div>
+        <div class="twitter">
+          <a href="http://www.twitter.com/#!/4moms">@4moms</a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-blurb">
+      <p>
+        Would you like to work with a talented team of people at a rapidly growing tech company?  Join 4moms, a truly innovative juvenile products company.  We’ve introduced robotics technology to the juvenile industry with our suite of high-tech baby gear, including the world’s first power folding stroller.
+      </p>
+      <p>
+        We want passionate, motivated Software Engineers to join our team of superstars. We want people who aren’t afraid to learn a new language or framework. We want people who aren’t afraid to code on the frontend one day, the backend the next and play system admin a week later.
       </p>
     </div>
   </div>
@@ -265,7 +327,13 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Bearded is a full-service design and development agency. The Beardeds are passionate about creating websites, brands, applications and print materials that will help you connect with your audience.
+      <p>
+        Bearded is a full-service design and development agency. The Beardeds are passionate about creating websites, brands, applications and print materials that will help you connect with your audience.
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
     </div>
   </div>
   <div id="cco" class="sponsor clearfix">
@@ -281,7 +349,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Carney+Co. is a full&#45;service agency working out of a beautiful office in Greensburg, PA. We focus on solutions that balance beauty and practicality for clients of all sizes and kinds. We love harmonious UI/UX, open source software, standards&#45;based development, craft beer, hockey and doing good.
+      <p>
+        Carney+Co. is a full&#45;service agency working out of a beautiful office in Greensburg, PA. We focus on solutions that balance beauty and practicality for clients of all sizes and kinds. We love harmonious UI/UX, open source software, standards&#45;based development, craft beer, hockey and doing good.
+      </p>
     </div>
   </div>
   <div id="coffee-and-code" class="sponsor clearfix">
@@ -297,7 +367,16 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Small shop, big results.  We write &ldquo;web developer&rdquo; on our tax forms and apply thoughtful solutions to the problems of our clients.  Plays nice with startups.
+      <p>
+        Small shop, big results.  We write &ldquo;web developer&rdquo; on our tax forms and apply thoughtful solutions to the problems of our clients.  Plays nice with startups.
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
     </div>
   </div>
   <div id="vivisimo" class="sponsor clearfix">
@@ -316,7 +395,9 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
-      Vivisimo provides enterprises with information optimization solutions that help maximize the business value of information.  Unlike traditional information management products, Vivisimo’s innovative solutions help end-users find and take advantage of all appropriate and available information, regardless of source, location or type. Vivisimo’s innovative technology is delivered with a focus on end-user satisfaction and application control through easy-to-use interfaces, flexible security management and a modern architecture that enables quick deployment. Vivisimo products are available as standalone information optimization applications or as OEM versions embedded within partner applications and solutions. Vivisimo serves its clients from headquarters in Pittsburgh, USA, and through partners around the world.
+      <p>
+        Vivisimo provides enterprises with information optimization solutions that help maximize the business value of information.  Unlike traditional information management products, Vivisimo’s innovative solutions help end-users find and take advantage of all appropriate and available information, regardless of source, location or type. Vivisimo’s innovative technology is delivered with a focus on end-user satisfaction and application control through easy-to-use interfaces, flexible security management and a modern architecture that enables quick deployment. Vivisimo products are available as standalone information optimization applications or as OEM versions embedded within partner applications and solutions. Vivisimo serves its clients from headquarters in Pittsburgh, USA, and through partners around the world.
+      </p>
     </div>
   </div>
   <div id="sparkbox" class="sponsor clearfix">
@@ -332,7 +413,13 @@ jQuery(function($) {
       </div>
     </div>
     <div class="sponsor-blurb">
+      <p>
 Sparkbox is a small team of smart people working in a renovated space in Dayton, Ohio. We specialize in front-end consulting, design, and development, building responsive websites that possess both brains and beauty. We love standards, craftsmanship, Ruby, and bacon – among other wonderful things.
+<br />
+<br />
+<br />
+<br />
+      </p>
     </div>
   </div>
   <div id="girl-develop-it" class="sponsor clearfix">
@@ -348,25 +435,30 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      Want to learn how to code? Don&#8217;t be shy, Develop it!
-      <br />
-      Girl Develop It provides low-cost, judgment-free environments for learning software development. We&#8217;d like to see more people and especially more women creating their visions through programming. We started in New York City and have chapters in Philadelphia, PA, Austin, TX, San Francisco, CA, Columbus and Cincinnati, OH, Ottawa, Canada, and Sydney, Australia.
+      <p>
+        Want to learn how to code? Don&#8217;t be shy, Develop it!
+      </p>
+      <p>
+        Girl Develop It provides low-cost, judgment-free environments for learning software development. We&#8217;d like to see more people and especially more women creating their visions through programming. We started in New York City and have chapters in Philadelphia, PA, Austin, TX, San Francisco, CA, Columbus and Cincinnati, OH, Ottawa, Canada, and Sydney, Australia.
+      </p>
     </div>
   </div>
-  <div id="pikimal" class="sponsor clearfix">
+  <div id="webkite" class="sponsor clearfix">
     <div class="sponsor-card">
       <div class="inside">
-        <a href="http://pikimal.com/"><img src="/images/scrc/logo-pikimal.jpg" alt="Pikimal" title="Pikimal" /></a>
+        <a href="http://webkite.com/"><img src="/images/scrc/logo-webkite.png" alt="WebKite" title="WebKite" /></a>
         <div class="web">
-          <a href="http://pikimal.com/">pikimal.com</a>
+          <a href="http://webkite.com/">webkite.com</a>
         </div>
         <div class="twitter">
-          <a href="http://www.twitter.com/#!/pikimal">@pikimal</a>
+          <a href="http://www.twitter.com/#!/flyasite">@flyasite</a>
         </div>
       </div>
     </div>
     <div class="sponsor-blurb">
-      Pikimal, a startup based here in Pittsburgh, is pioneering a utility to put users back in the driver’s seat of decision making. Powered by a talented dev team that owns their work, Pikimal is creating a better way to sort and compare thousands of products. In a world where SEO and ads taints search results finding information about items and making a decision can be a hassle. Pikimal provides a bias-free venue for users to sort through a mountain of facts with a few clicks of a button. Combine sortable facts with crowd-sourced ratings and reviews, and <a href="http://pikimal.com/">Pikimal.com</a> becomes the ideal decision-making destination.
+      <p>
+        WebKite, a startup based here in Pittsburgh, is pioneering a utility to put users back in the driver’s seat of decision making. Powered by a talented dev team that owns their work, WebKite is gives users the power to create their own vertical search engine from a set of data. It combines the best parts of a decision and search engine with content management. Combine sortable facts with crowd-sourced ratings and reviews, and WebKite.com becomes the ideal decision-making destination. Despite the suite of powerful tools WebKite is built on, it&#8217;s easy to implement. You could say it&#8217;s as simple as flying a kite.
+      </p>
     </div>
   </div>
   <div id="careerimp" class="sponsor clearfix">
@@ -385,7 +477,13 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      Careerimp is a Pittsburgh-based company and the creator of two innovative services, <a href="http://resunate.com/">Resunate</a> and <a href="http://applyapp.ly">ApplyApp.ly</a> (both of which are built on Ruby on Rails). Our mission is to make finding and applying to jobs easier, more effective, and, believe it or not, even fun.
+      <p>
+        Careerimp is a Pittsburgh-based company and the creator of two innovative services, <a href="http://resunate.com/">Resunate</a> and <a href="http://applyapp.ly">ApplyApp.ly</a> (both of which are built on Ruby on Rails). Our mission is to make finding and applying to jobs easier, more effective, and, believe it or not, even fun.
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
     </div>
   </div>
   <div id="stack-builders" class="sponsor clearfix">
@@ -401,7 +499,9 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      Stack Builders is a Ruby consultancy based in New York City and Colombia, South America. Our developers work together on complex projects to produce elegant and cost-effective web applications. Applications that we have worked on include financial platforms, e-commerce solutions and social applications. Our team produces applications that deliver great value to our clients, while our consultants keep their skills sharp by challenging each other and contributing back to the open source ecosystem that supports our products.
+      <p>
+        Stack Builders is a Ruby consultancy based in New York City and Colombia, South America. Our developers work together on complex projects to produce elegant and cost-effective web applications. Applications that we have worked on include financial platforms, e-commerce solutions and social applications. Our team produces applications that deliver great value to our clients, while our consultants keep their skills sharp by challenging each other and contributing back to the open source ecosystem that supports our products.
+      </p>
     </div>
   </div>
   <div id="nurelm" class="sponsor clearfix">
@@ -414,7 +514,9 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      You like to design. We like to code. Established in 2000, NuRelm has thrived as your local resource for Web development and content management software for over a decade. Whether you are a design firm in need of Web backend development or you are a business in need of full website services, NuRelm is your go-to company. Local, accessible and technology-agnostic: NuRelm is your best bet for custom Website development.
+      <p>
+        You like to design. We like to code. Established in 2000, NuRelm has thrived as your local resource for Web development and content management software for over a decade. Whether you are a design firm in need of Web backend development or you are a business in need of full website services, NuRelm is your go-to company. Local, accessible and technology-agnostic: NuRelm is your best bet for custom Website development.
+      </p>
     </div>
   </div>
   <div id="new_relic" class="sponsor clearfix">
@@ -430,7 +532,9 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      New Relic is the all&#45;in&#45;one web application management provider for the cloud and the data center. More than 21,000 organizations use New Relic to optimize over 60 Billion metrics in production each day. Fully implemented in just minutes, New Relic provides 24/7 Real User Monitoring (RUM) and code&#45;level diagnostics for Web apps deployed on dedicated infrastructures, the cloud or hybrid environments. New Relic provides support for Ruby, Python, PHP, Java, and .NET platforms and related frameworks. New Relic also partners with leading cloud management, platform and hosting vendors to provide their customers with instant visibility into the performance of deployed applications.
+      <p>
+        New Relic is the all&#45;in&#45;one web application management provider for the cloud and the data center. More than 21,000 organizations use New Relic to optimize over 60 Billion metrics in production each day. Fully implemented in just minutes, New Relic provides 24/7 Real User Monitoring (RUM) and code&#45;level diagnostics for Web apps deployed on dedicated infrastructures, the cloud or hybrid environments. New Relic provides support for Ruby, Python, PHP, Java, and .NET platforms and related frameworks. New Relic also partners with leading cloud management, platform and hosting vendors to provide their customers with instant visibility into the performance of deployed applications.
+      </p>
     </div>
   </div>
   <div id="upmc-technology-development-center" class="sponsor clearfix">
@@ -477,7 +581,45 @@ Sparkbox is a small team of smart people working in a renovated space in Dayton,
       </div>
     </div>
     <div class="sponsor-blurb">
-      Sticker Mule is the easiest way to buy custom stickers. They ship for free in just 5 days and offer free proofs on all orders. With print runs starting at just $49 for 50 stickers, they aim to be every Ruby developer&#8217;s favorite sticker printing service.
+      <p>
+        Sticker Mule is the easiest way to buy custom stickers. They ship for free in just 5 days and offer free proofs on all orders. With print runs starting at just $49 for 50 stickers, they aim to be every Ruby developer&#8217;s favorite sticker printing service.
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+      </p>
+    </div>
+  </div>
+  <div id="pgh_cultural_trust" class="sponsor clearfix">
+    <div class="sponsor-card">
+      <div class="inside">
+        <a href="http://culturaldistrict.org/?cid=CD_SCRC_2012"><img src="/images/scrc/logo-pgh-cultural-trust.jpg" alt="Pittsburgh Cultural Trust" title="Pittsburgh Cultural Trust" width="260" /></a>
+        <div class="web">
+          <a href="http://culturaldistrict.org/?cid=CD_SCRC_2012">culturaldistrict.org</a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-blurb">
+      <p>
+        Built on Ruby on Rails, <a href="http://culturaldistrict.org/?cid=CD_SCRC_2012">CulturalDistrict.org</a> is your one-stop shop for tickets and events in Pittsburgh’s Cultural District. Located in the heart of Downtown Pittsburgh, the 14-square block Cultural District encompasses over 90 retail shops, 50 dining establishments, seven world-class theaters, eight public parks and art installations and a dozen art galleries.
+      </p>
+    </div>
+  </div>
+  <div id="lantek" class="sponsor clearfix">
+    <div class="sponsor-card">
+      <div class="inside">
+        <a href="http://www.lantekcs.com"><img src="/images/scrc/logo-lantek.jpg" alt="Lantek" title="lantek" width="260" /></a>
+        <div class="web">
+          <a href="http://www.lantekcs.com">lantekcs.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="sponsor-blurb">
+      <p>
+        For over 20 years, LANtek has been a leading provider of technical services and IT staffing. With more than 150 employees, LANtek provides a wide range of technical services and staffing solutions. With our flexible service offerings, we can supplement your onsite staff, provide remote IT managed services, or customize a solution that fits your needs. We are dedicated to providing personalized service. We pride ourselves on our ability to determine and quickly respond to your specific needs.
+      </p>
     </div>
   </div>
 </div>
